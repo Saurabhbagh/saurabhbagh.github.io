@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Saurabh Bagh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+  function openLeftMenu() {
+    document.getElementById("leftMenu").style.display = "block";
+  }
+  
+  function closeLeftMenu() {
+    document.getElementById("leftMenu").style.display = "none";
+  }
+  
+  </script>
+
+  
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">About Me</a>
+  <a href="./PortFolio.html" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="./Timeline.html" class="w3-bar-item w3-button">TimeLine</a>
+</div>
+
+
+<div class="w3-black">
+  <button class="w3-button w3-yellow w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+  
+  <div class="jumbotron w3-gray">
+    <div class="container text-center">
+      <h1>Saurabh Bagh</h1>      
+      <p> VR Game Developer | Software Developer | SEO Enthusiast</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+</div>
+     
+</body>
+</html>
