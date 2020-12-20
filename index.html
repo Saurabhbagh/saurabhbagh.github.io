@@ -15,6 +15,12 @@
 
   
   <style>
+  h1{
+    font-size: 26px;
+    color: #209cee;
+    font-weight: 800;
+
+  }
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -25,7 +31,7 @@
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   h4 {
     font-size: 19px;
@@ -47,11 +53,11 @@
     background-color: #f6f6f6;
   }
   .logo-small {
-    color: w to #f4511e;
+    color: w to #ebbeb1;
     font-size: 50px;
   }
   .logo {
-    color: #f4511e;
+    color: #209cee;
     font-size: 200px;
   }
   .thumbnail {
@@ -213,6 +219,38 @@
 .css {width: 70%; background-color: #f3cd21;} /* Blue */
 .js {width: 55%; background-color: #e92113;} /* Red */
 .php {width: 65%; background-color: #dfaf14;} /* Dark Grey */
+
+
+
+
+/******************* Timeline Demo - 2 *****************/
+.main-timeline2{padding-top:50px;overflow:hidden;position:relative}
+.main-timeline2:before{content:"";width:7px;height:100%;background:#084772;margin:0 auto;position:absolute;top:80px;left:0;right:0}
+.main-timeline2 .timeline{width:50%;float:left;padding:20px 60px;border-top:7px solid #084772;border-right:7px solid #084772;border-radius:0 30px 0 0;position:relative;right:-3.5px}
+.main-timeline2 .icon{display:block;width:50px;height:50px;line-height:50px;border-radius:50%;background:#e84c47;border:1px solid #fff;text-align:center;font-size:25px;color:#fff;box-shadow:0 0 0 2px #e84c47;position:absolute;top:-30px;left:0}
+.main-timeline2 .timeline-content{display:block;padding:30px 10px 10px;border-radius:20px;background:#e84c47;color:#fff;position:relative}
+.main-timeline2 .timeline-content:hover{text-decoration:none;color:#fff}
+.main-timeline2 .timeline-content:after,.main-timeline2 .timeline-content:before{content:"";display:block;width:10px;height:50px;border-radius:10px;background:#e84c47;border:1px solid #fff;position:absolute;top:-35px;left:50px}
+.main-timeline2 .timeline-content:after{left:auto;right:50px}
+.main-timeline2 .title{font-size:24px;margin:0}
+.main-timeline2 .description{font-size:15px;letter-spacing:1px;margin:0 0 5px}
+.main-timeline2 .timeline:nth-child(2n){border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:-3.5px}
+.main-timeline2 .timeline:nth-child(2n) .icon{left:auto;right:0;box-shadow:0 0 0 2px #4bd9bf}
+.main-timeline2 .timeline:nth-child(2){margin-top:130px}
+.main-timeline2 .timeline:nth-child(odd){margin:-130px 0 30px}
+.main-timeline2 .timeline:nth-child(even){margin-bottom:80px}
+.main-timeline2 .timeline:first-child,.main-timeline2 .timeline:last-child:nth-child(even){margin:0 0 30px}
+.main-timeline2 .timeline:nth-child(2n) .icon,.main-timeline2 .timeline:nth-child(2n) .timeline-content,.main-timeline2 .timeline:nth-child(2n) .timeline-content:after,.main-timeline2 .timeline:nth-child(2n) .timeline-content:before{background:#4bd9bf}
+.main-timeline2 .timeline:nth-child(3n) .icon,.main-timeline2 .timeline:nth-child(3n) .timeline-content,.main-timeline2 .timeline:nth-child(3n) .timeline-content:after,.main-timeline2 .timeline:nth-child(3n) .timeline-content:before{background:#ff9e09}
+.main-timeline2 .timeline:nth-child(3n) .icon{box-shadow:0 0 0 2px #ff9e09}
+.main-timeline2 .timeline:nth-child(4n) .icon,.main-timeline2 .timeline:nth-child(4n) .timeline-content,.main-timeline2 .timeline:nth-child(4n) .timeline-content:after,.main-timeline2 .timeline:nth-child(4n) .timeline-content:before{background:#3ebae7}
+.main-timeline2 .timeline:nth-child(4n) .icon{box-shadow:0 0 0 2px #3ebae7}
+@media only screen and (max-width:767px){.main-timeline2:before{left:0;right:auto}
+.main-timeline2 .timeline,.main-timeline2 .timeline:nth-child(even),.main-timeline2 .timeline:nth-child(odd){width:100%;float:none;padding:20px 30px;margin:0 0 30px;border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:0}
+.main-timeline2 .icon{left:auto;right:0}
+}
+@media only screen and (max-width:480px){.main-timeline2 .title{font-size:18px}
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -230,7 +268,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#Timeline">TIMELINE</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -266,25 +304,26 @@
     </div>
 <div class="col-sm-4">
 
-  <div class="w3-bar-block">
-    <h2>Programming Skills</h2>
-  </div>
-      <p>C#</p>
+  
+    <h1>Programming Skills</h1><br>
+    
+  
+      <p><strong>C#</strong></p>
 <div class="containerskill">
   <div class="skills Unity3D"></div>
 </div>
 
-<p>Python</p>
+<p><strong>Python</strong></p>
 <div class="containerskill">
   <div class="skills css"></div>
 </div>
 
-<p>Java</p>
+<p><strong>Java</strong></p>
 <div class="containerskill">
   <div class="skills js"></div>
 </div>
 
-<p>R</p>
+<p><strong>R</strong></p>
 <div class="containerskill">
   <div class="skills php"></div>
 </div>
@@ -295,89 +334,148 @@
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo slideanim"></span>
+      <span class="glyphicon glyphicon-road logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>PROFESSIONAL SKILLS</h2><br>
-      <table class="cke_show_border" style="width: 504.17px;" border="0" cellspacing="0" cellpadding="0">
+     
+      <h1 >Professional Skills</h1><br>
+      <div class="table-responsive"> 
+      <table class="cke_show_border table table-hover" style="width: 504.17px;" border="0" cellspacing="0" cellpadding="0">
         <tbody>
         <tr>
-        <td style="width: 133px;"><strong>Software Expertise</strong></td>
-        <td style="width: 365.17px;">
+        <td ><strong>Software Expertise</strong></td>
+        <td >
         <p>Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
         </td>
         </tr>
         <tr>
-        <td style="width: 133px;">
+        <td >
         <p><strong>CMS</strong></p>
         </td>
-        <td style="width: 365.17px;">
+        <td >
         <p>WordPress, Fiona</p>
         </td>
         </tr>
         <tr>
-        <td style="width: 133px;">
+        <td >
         <p><strong>SEO Testing</strong></p>
         </td>
-        <td style="width: 365.17px;">
+        <td >
         <p>Screaming Frog</p>
         </td>
         </tr>
         <tr>
-        <td style="width: 133px;"><strong>Database</strong></td>
-        <td style="width: 365.17px;">My SQL, Oracle 11g, MS Access</td>
+        <td ><strong>Database</strong></td>
+        <td >My SQL, Oracle 11g, MS Access</td>
         </tr>
         <tr>
-        <td style="width: 133px;"><strong>Transferable skills</strong></td>
-        <td style="width: 365.17px;">Very strong verbal and communication skills, ability<br />to achieve goals in a highly innovative and fastpaced<br />environment</td>
+        <td ><strong>Transferable skills</strong></td>
+        <td >Very strong verbal and communication skills, ability<br />to achieve goals in a highly innovative and fastpaced<br />environment</td>
         </tr>
         </tbody>
         </table>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
+<div id="Timeline" class="container-fluid text-center">
+  <h1>TIMELINE</h1>
   <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-md-12">
+        <div class="main-timeline2">
+            <div class="timeline">
+                <span class="icon fa fa-globe"></span>
+                <a href="#" class="timeline-content">
+                    <h3 class="title">Intern VR Engineer</h3>
+                    <h7 > January 2020 - September 2020</h7><br>
+                    <h7 > Wolfsburg, Germany </h7>
+                    <p class="description">
+                        Volkawagen AG.
+                    </p>
+                </a>
+            </div>
+
+            <div class="timeline">
+              <span class="icon fa fa-globe"></span>
+              <a href="#" class="timeline-content">
+                  <h3 class="title">Student Assistant</h3>
+                  <h7 > September 2018 - September 2020</h7><br>
+                  <h7 > Bayreuth, Germany </h7>
+                  <p class="description">
+                    University of Bayreuth
+                  </p>
+              </a>
+          </div>
+
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <a href="#" class="timeline-content">
+                <h3 class="title">VR Software Developer Intern</h3>
+                <h7 > September 2019 - November 2019</h7><br>
+                <h7 > Herzogenaurach, Germany </h7>
+                <p class="description">
+                  Schaeffler Ag.
+                </p>
+            </a>
+        </div>
+
+        <div class="timeline">
+          <span class="icon fa fa-globe"></span>
+          <a href="#" class="timeline-content">
+              <h3 class="title">Working Student</h3>
+              <h7 > August 2018 - September 2018</h7><br>
+              <h7 > Nuremberg, Germany </h7>
+              <p class="description">
+               Exasol 
+              </p>
+          </a>
+      </div>
+
+
+      <div class="timeline">
+        <span class="icon fa fa-globe"></span>
+        <a href="#" class="timeline-content">
+            <h3 class="title">Master in Science Computer Science</h3>
+            <h7 > October 2017 - Present</h7><br>
+            <h7 > Bayreuth, Germany </h7>
+            <p class="description">
+             University of Bayreuth 
+            </p>
+        </a>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+
+      <div class="timeline">
+        <span class="icon fa fa-globe"></span>
+        <a href="#" class="timeline-content">
+            <h3 class="title">Software Engineer</h3>
+            <h7 > August 2014 - July 2017</h7><br>
+            <h7 > Noida, India </h7>
+            <p class="description">
+             HCK Technologies LTD. 
+            </p>
+        </a>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
+
+
+    <div class="timeline">
+      <span class="icon fa fa-globe"></span>
+      <a href="#" class="timeline-content">
+          <h3 class="title">B. Tech. in Computer Science and Engineering</h3>
+          <h7 > August 2010 - June 2014 </h7><br>
+          <h7 > Rohtak, India </h7>
+          <p class="description">
+           Maharshi Dayanand University 
+          </p>
+      </a>
   </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        </div>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
 </div>
+
+  
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
@@ -544,7 +642,7 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <p></a></p>
 </footer>
 
 <script>
