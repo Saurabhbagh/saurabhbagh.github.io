@@ -193,25 +193,26 @@
     }
   }
 
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
 
-  * {box-sizing: border-box}
-
-.container {
-  width: 100%;
-  background-color: #ddd;
+/* Container for skill bars */
+.containerskill {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
 }
 
 .skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
+.Unity3D {width: 80%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -260,25 +261,25 @@
       <h2>About Me</h2><br>
       <h4>VR Game Developer| Software Developer | SEO Enthusiast</h4>
     </div>
-    <div class="col-sm-4">
-      <p>HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
+     <div class="col-sm-4">
+      <p>Unity 3D</p>
+<div class="containerskill">
+  <div class="skills Unity3D"></div>
 </div>
 
 <p>CSS</p>
-<div class="container">
-  <div class="skills css">80%</div>
+<div class="containerskill">
+  <div class="skills css"></div>
 </div>
 
 <p>JavaScript</p>
-<div class="container">
-  <div class="skills js">65%</div>
+<div class="containerskill">
+  <div class="skills js"></div>
 </div>
 
 <p>PHP</p>
-<div class="container">
-  <div class="skills php">60%</div>
+<div class="containerskill">
+  <div class="skills php"></div>
 </div>
     </div>
   </div>
