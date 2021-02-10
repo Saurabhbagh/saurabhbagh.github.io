@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0EKP89MMQ4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EKP89MMQ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-0EKP89MMQ4');
-</script>
+    gtag('config', 'G-0EKP89MMQ4');
+  </script>
   <title>Saurabh Bagh</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,284 +23,517 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
   <style>
-  h1{
-    font-size: 26px;
-    color: #209cee;
-    font-weight: 800;
+    h1 {
+      font-size: 26px;
+      color: #209cee;
+      font-weight: 800;
 
-  }
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #948f8e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: w to #ebbeb1;
-    font-size: 50px;
-  }
-  .logo {
-    color: #209cee;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: black;
-    border-radius: 10;
-  }
-  .thumbnail img {
-    
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #209cee;
-  }
-  .carousel-indicators li {
-    border-color: #209cee;
-  }
-  .carousel-indicators li.active {
-    background-color: #209cee;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #bbada9; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: rgb(170, 29, 29) !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #e2dcdb !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #209cee !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #209cee;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
     }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
+
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
     }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
+
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
+
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
     }
-  }
-  @media screen and (max-width: 480px) {
+
+    .jumbotron {
+      background-color: #948f8e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+
+    .container-fluid {
+      padding: 60px 50px;
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .logo-small {
+      color: w to #ebbeb1;
+      font-size: 50px;
+    }
+
     .logo {
-      font-size: 150px;
+      color: #209cee;
+      font-size: 200px;
     }
-  }
 
-  /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: black;
+      border-radius: 10;
+    }
 
-/* Container for skill bars */
-.containerskill {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-}
+    .thumbnail img {
 
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
-}
+      margin-bottom: 10px;
+    }
 
-.Unity3D {width: 80%; background-color: #11ee36;} /* Green */
-.css {width: 70%; background-color: #f3cd21;} /* Blue */
-.js {width: 55%; background-color: #e92113;} /* Red */
-.php {width: 65%; background-color: #dfaf14;} /* Dark Grey */
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: #209cee;
+    }
+
+    .carousel-indicators li {
+      border-color: #209cee;
+    }
+
+    .carousel-indicators li.active {
+      background-color: #209cee;
+    }
+
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+
+    .item span {
+      font-style: normal;
+    }
+
+    .panel {
+      border: 1px solid #bbada9;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    }
+
+    .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: rgb(170, 29, 29) !important;
+      color: #f4511e;
+    }
+
+    .panel-heading {
+      color: #fff !important;
+      background-color: #e2dcdb !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+      background-color: white !important;
+    }
+
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: #209cee !important;
+      background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #209cee;
+    }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    }
+
+    /* Make sure that padding behaves as expected */
+    * {
+      box-sizing: border-box
+    }
+
+    /* Container for skill bars */
+    .containerskill {
+      width: 100%;
+      /* Full width */
+      background-color: #ddd;
+      /* Grey background */
+    }
+
+    .skills {
+      text-align: right;
+      /* Right-align text */
+      padding-top: 10px;
+      /* Add top padding */
+      padding-bottom: 10px;
+      /* Add bottom padding */
+      color: white;
+      /* White text color */
+    }
+
+    .Unity3D {
+      width: 80%;
+      background-color: #11ee36;
+    }
+
+    /* Green */
+    .css {
+      width: 70%;
+      background-color: #f3cd21;
+    }
+
+    /* Blue */
+    .js {
+      width: 55%;
+      background-color: #e92113;
+    }
+
+    /* Red */
+    .php {
+      width: 65%;
+      background-color: #dfaf14;
+    }
+
+    /* Dark Grey */
 
 
 
 
-/******************* Timeline Demo - 2 *****************/
-.main-timeline2{padding-top:50px;overflow:hidden;position:relative}
-.main-timeline2:before{content:"";width:7px;height:100%;background:#084772;margin:0 auto;position:absolute;top:80px;left:0;right:0}
-.main-timeline2 .timeline{width:50%;float:left;padding:20px 60px;border-top:7px solid #084772;border-right:7px solid #084772;border-radius:0 30px 0 0;position:relative;right:-3.5px}
-.main-timeline2 .icon{display:block;width:50px;height:50px;line-height:50px;border-radius:50%;background:#e84c47;border:1px solid #fff;text-align:center;font-size:25px;color:#fff;box-shadow:0 0 0 2px #e84c47;position:absolute;top:-30px;left:0}
-.main-timeline2 .timeline-content{display:block;padding:30px 10px 10px;border-radius:20px;background:#e84c47;color:#fff;position:relative}
-.main-timeline2 .timeline-content:hover{text-decoration:none;color:#fff}
-.main-timeline2 .timeline-content:after,.main-timeline2 .timeline-content:before{content:"";display:block;width:10px;height:50px;border-radius:10px;background:#e84c47;border:1px solid #fff;position:absolute;top:-35px;left:50px}
-.main-timeline2 .timeline-content:after{left:auto;right:50px}
-.main-timeline2 .title{color: blue;font-weight: bold; font-size:24px;margin:0}
-.main-timeline2 .description{color: black;font-size:25px;letter-spacing:1px;margin:0 0 5px}
-.main-timeline2 .timeline:nth-child(2n){border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:-3.5px}
-.main-timeline2 .timeline:nth-child(2n) .icon{left:auto;right:0;box-shadow:0 0 0 2px #4bd9bf}
-.main-timeline2 .timeline:nth-child(2){margin-top:130px}
-.main-timeline2 .timeline:nth-child(odd){margin:-130px 0 30px}
-.main-timeline2 .timeline:nth-child(even){margin-bottom:80px}
-.main-timeline2 .timeline:first-child,.main-timeline2 .timeline:last-child:nth-child(even){margin:0 0 30px}
-.main-timeline2 .timeline:nth-child(2n) .icon,.main-timeline2 .timeline:nth-child(2n) .timeline-content,.main-timeline2 .timeline:nth-child(2n) .timeline-content:after,.main-timeline2 .timeline:nth-child(2n) .timeline-content:before{background:#4bd9bf}
-.main-timeline2 .timeline:nth-child(3n) .icon,.main-timeline2 .timeline:nth-child(3n) .timeline-content,.main-timeline2 .timeline:nth-child(3n) .timeline-content:after,.main-timeline2 .timeline:nth-child(3n) .timeline-content:before{background:#ff9e09}
-.main-timeline2 .timeline:nth-child(3n) .icon{box-shadow:0 0 0 2px #ff9e09}
-.main-timeline2 .timeline:nth-child(4n) .icon,.main-timeline2 .timeline:nth-child(4n) .timeline-content,.main-timeline2 .timeline:nth-child(4n) .timeline-content:after,.main-timeline2 .timeline:nth-child(4n) .timeline-content:before{background:#3ebae7}
-.main-timeline2 .timeline:nth-child(4n) .icon{box-shadow:0 0 0 2px #3ebae7}
-@media only screen and (max-width:767px){.main-timeline2:before{left:0;right:auto}
-.main-timeline2 .timeline,.main-timeline2 .timeline:nth-child(even),.main-timeline2 .timeline:nth-child(odd){width:100%;float:none;padding:20px 30px;margin:0 0 30px;border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:0}
-.main-timeline2 .icon{left:auto;right:0}
-}
-@media only screen and (max-width:480px){.main-timeline2 .title{font-size:18px}
-}
+    /******************* Timeline Demo - 2 *****************/
+    .main-timeline2 {
+      padding-top: 50px;
+      overflow: hidden;
+      position: relative
+    }
+
+    .main-timeline2:before {
+      content: "";
+      width: 7px;
+      height: 100%;
+      background: #084772;
+      margin: 0 auto;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0
+    }
+
+    .main-timeline2 .timeline {
+      width: 50%;
+      float: left;
+      padding: 20px 60px;
+      border-top: 7px solid #084772;
+      border-right: 7px solid #084772;
+      border-radius: 0 30px 0 0;
+      position: relative;
+      right: -3.5px
+    }
+
+    .main-timeline2 .icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background: #e84c47;
+      border: 1px solid #fff;
+      text-align: center;
+      font-size: 25px;
+      color: #fff;
+      box-shadow: 0 0 0 2px #e84c47;
+      position: absolute;
+      top: -30px;
+      left: 0
+    }
+
+    .main-timeline2 .timeline-content {
+      display: block;
+      padding: 30px 10px 10px;
+      border-radius: 20px;
+      background: #e84c47;
+      color: #fff;
+      position: relative
+    }
+
+    .main-timeline2 .timeline-content:hover {
+      text-decoration: none;
+      color: #fff
+    }
+
+    .main-timeline2 .timeline-content:after,
+    .main-timeline2 .timeline-content:before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 50px;
+      border-radius: 10px;
+      background: #e84c47;
+      border: 1px solid #fff;
+      position: absolute;
+      top: -35px;
+      left: 50px
+    }
+
+    .main-timeline2 .timeline-content:after {
+      left: auto;
+      right: 50px
+    }
+
+    .main-timeline2 .title {
+      color: blue;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 0
+    }
+
+    .main-timeline2 .description {
+      color: black;
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin: 0 0 5px
+    }
+
+    .main-timeline2 .timeline:nth-child(2n) {
+      border-right: none;
+      border-left: 7px solid #084772;
+      border-radius: 30px 0 0;
+      right: auto;
+      left: -3.5px
+    }
+
+    .main-timeline2 .timeline:nth-child(2n) .icon {
+      left: auto;
+      right: 0;
+      box-shadow: 0 0 0 2px #4bd9bf
+    }
+
+    .main-timeline2 .timeline:nth-child(2) {
+      margin-top: 130px
+    }
+
+    .main-timeline2 .timeline:nth-child(odd) {
+      margin: -130px 0 30px
+    }
+
+    .main-timeline2 .timeline:nth-child(even) {
+      margin-bottom: 80px
+    }
+
+    .main-timeline2 .timeline:first-child,
+    .main-timeline2 .timeline:last-child:nth-child(even) {
+      margin: 0 0 30px
+    }
+
+    .main-timeline2 .timeline:nth-child(2n) .icon,
+    .main-timeline2 .timeline:nth-child(2n) .timeline-content,
+    .main-timeline2 .timeline:nth-child(2n) .timeline-content:after,
+    .main-timeline2 .timeline:nth-child(2n) .timeline-content:before {
+      background: #4bd9bf
+    }
+
+    .main-timeline2 .timeline:nth-child(3n) .icon,
+    .main-timeline2 .timeline:nth-child(3n) .timeline-content,
+    .main-timeline2 .timeline:nth-child(3n) .timeline-content:after,
+    .main-timeline2 .timeline:nth-child(3n) .timeline-content:before {
+      background: #ff9e09
+    }
+
+    .main-timeline2 .timeline:nth-child(3n) .icon {
+      box-shadow: 0 0 0 2px #ff9e09
+    }
+
+    .main-timeline2 .timeline:nth-child(4n) .icon,
+    .main-timeline2 .timeline:nth-child(4n) .timeline-content,
+    .main-timeline2 .timeline:nth-child(4n) .timeline-content:after,
+    .main-timeline2 .timeline:nth-child(4n) .timeline-content:before {
+      background: #3ebae7
+    }
+
+    .main-timeline2 .timeline:nth-child(4n) .icon {
+      box-shadow: 0 0 0 2px #3ebae7
+    }
+
+    @media only screen and (max-width:767px) {
+      .main-timeline2:before {
+        left: 0;
+        right: auto
+      }
+
+      .main-timeline2 .timeline,
+      .main-timeline2 .timeline:nth-child(even),
+      .main-timeline2 .timeline:nth-child(odd) {
+        width: 100%;
+        float: none;
+        padding: 20px 30px;
+        margin: 0 0 30px;
+        border-right: none;
+        border-left: 7px solid #084772;
+        border-radius: 30px 0 0;
+        right: auto;
+        left: 0
+      }
+
+      .main-timeline2 .icon {
+        left: auto;
+        right: 0
+      }
+    }
+
+    @media only screen and (max-width:480px) {
+      .main-timeline2 .title {
+        font-size: 18px
+      }
+    }
   </style>
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WWV99N9');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WWV99N9');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body id="SaurabhBagh" data-spy="scroll" data-target=".navbar" data-offset="60">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWV99N9"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-<nav class="navbar navbar-default navbar-fixed-top w3-black">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"> <img src="./favicon_io/android-chrome-192x192.png" width="50px" height="50px"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#Timeline">TIMELINE</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#videos">VIDEOS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="jumbotron text-center w3-black  ">
-  <h1>Saurabh Bagh</h1> 
-  <p>Doing Something</p> 
-  <!--
+<body id="SaurabhBagh" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWV99N9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav class="navbar navbar-default navbar-fixed-top w3-black">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage"> <img src="./favicon_io/android-chrome-192x192.png" width="50px"
+            height="50px"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#Timeline">TIMELINE</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#videos">VIDEOS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center w3-black  ">
+    <h1>Saurabh Bagh</h1>
+    <p>Doing Something</p>
+    <!--
   <form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
@@ -309,352 +543,412 @@
     </div>
   </form>
 -->
-</div>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid ">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>About Me</h1><br>
-      <h2>Saurabh Bagh</h2>
-      <h3>VR Game Developer| Software Developer | SEO Enthusiast</h3>
-      <h4>University of Bayreuth</h4>
-      <p>Master Student at the University of Bayreuth in Computer Science.</p>
-    </div>
-<div class="col-sm-4">
-
-  
-    <h1>Programming Skills</h1><br>
-    
-  
-      <p><strong>C#</strong></p>
-<div class="containerskill">
-  <div class="skills Unity3D"></div>
-</div>
-
-<p><strong>Python</strong></p>
-<div class="containerskill">
-  <div class="skills css"></div>
-</div>
-
-<p><strong>Java</strong></p>
-<div class="containerskill">
-  <div class="skills js"></div>
-</div>
-
-<p><strong>R</strong></p>
-<div class="containerskill">
-  <div class="skills php"></div>
-</div>
-    </div>
   </div>
-</div>
 
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-road logo slideanim"></span>
-    </div>
-    <div class="col-sm-8 " style="overflow-x:auto;">
-     
-      <h1 >Professional Skills</h1><br>
-      <div class="table-responsive"> 
-      <table class="table" style="width: 504.17px;" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-        <tr>
-        <td ><strong>Software Expertise</strong></td>
-        <td >
-        <p>Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
-        </td>
-        </tr>
-        <tr>
-        <td >
-        <p><strong>CMS</strong></p>
-        </td>
-        <td >
-        <p>WordPress, Fiona</p>
-        </td>
-        </tr>
-        <tr>
-        <td >
-        <p><strong>SEO Testing</strong></p>
-        </td>
-        <td >
-        <p>Screaming Frog</p>
-        </td>
-        </tr>
-        <tr>
-        <td ><strong>Database</strong></td>
-        <td >My SQL, Oracle 11g, MS Access</td>
-        </tr>
-        <tr>
-        <td ><strong>BI Tool</strong></td>
-        <td >Tableau</td>
-        </tr>
-        <tr>
-        <td ><strong>Transferable skills</strong></td>
-        <td >Very strong verbal and communication skills, ability<br />to achieve goals in a highly innovative and fastpaced<br />environment</td>
-        </tr>
-        </tbody>
-        </table>
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>About Me</h1><br>
+        <h2>Saurabh Bagh</h2>
+        <h3>VR Game Developer| Software Developer | SEO Enthusiast</h3>
+        <h4>University of Bayreuth</h4>
+        <p>Master Student at the University of Bayreuth in Computer Science.</p>
+      </div>
+      <div class="col-sm-4">
+
+
+        <h1>Programming Skills</h1><br>
+
+
+        <p><strong>C#</strong></p>
+        <div class="containerskill">
+          <div class="skills Unity3D"></div>
+        </div>
+
+        <p><strong>Python</strong></p>
+        <div class="containerskill">
+          <div class="skills css"></div>
+        </div>
+
+        <p><strong>Java</strong></p>
+        <div class="containerskill">
+          <div class="skills js"></div>
+        </div>
+
+        <p><strong>R</strong></p>
+        <div class="containerskill">
+          <div class="skills php"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Container (Timeline Section) -->
-<div id="Timeline" class="container-fluid text-center">
-  <h1>Timeline</h1>
-  <div class="row slideanim">
-    <div class="col-md-12">
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-road logo slideanim"></span>
+      </div>
+      <div class="col-sm-8 " style="overflow-x:auto;">
+
+        <h1>Professional Skills</h1><br>
+        <div class="table-responsive">
+          <table class="table" style="width: 504.17px;" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td><strong>Software Expertise</strong></td>
+                <td>
+                  <p>Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><strong>CMS</strong></p>
+                </td>
+                <td>
+                  <p>WordPress, Fiona</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><strong>SEO Testing</strong></p>
+                </td>
+                <td>
+                  <p>Screaming Frog</p>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Database</strong></td>
+                <td>My SQL, Oracle 11g, MS Access</td>
+              </tr>
+              <tr>
+                <td><strong>BI Tool</strong></td>
+                <td>Tableau</td>
+              </tr>
+              <tr>
+                <td><strong>Transferable skills</strong></td>
+                <td>Very strong verbal and communication skills, ability<br />to achieve goals in a highly innovative
+                  and fastpaced<br />environment</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Timeline Section) -->
+  <div id="Timeline" class="container-fluid text-center">
+    <h1>Timeline</h1>
+    <div class="row slideanim">
+      <div class="col-md-12">
         <div class="main-timeline2">
 
           <div class="timeline">
             <span class="icon fa fa-globe"></span>
             <div class="timeline-content">
-                <h3 class="title">Student Research Assistant</h3>
-                <h7 > October 2020 - Present</h7><br>
-                <h7 > Bayreuth, Germany </h7>
-                <p class="description">
-                <strong>  University of Bayreuth</strong>
-                </p>
-              </div>
-        </div>
-            <div class="timeline">
-                <span class="icon fa fa-globe"></span>
-                <div class="timeline-content">
-                    <h3 class="title">Intern VR Engineer</h3>
-                    <h7 > January 2020 - September 2020</h7><br>
-                    <h7 > Wolfsburg, Germany </h7>
-                    <p class="description">
-                    <strong>  Volkswagen AG.</strong>
-                    </p>
-                  </div>
+              <h3 class="title">Student Research Assistant</h3>
+              <h7> October 2020 - Present</h7><br>
+              <h7> Bayreuth, Germany </h7>
+              <p class="description">
+                <strong> University of Bayreuth</strong>
+              </p>
             </div>
-
-            <div class="timeline">
-              <span class="icon fa fa-globe"></span>
-              <div class="timeline-content">
-                  <h3 class="title">Student Assistant</h3>
-                  <h7 > September 2018 - September 2020</h7><br>
-                  <h7 > Bayreuth, Germany </h7>
-                  <p class="description">
-                  <strong>University of Bayreuth</strong>
-                  </p>
-                </div>
+          </div>
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div class="timeline-content">
+              <h3 class="title">Intern VR Engineer</h3>
+              <h7> January 2020 - September 2020</h7><br>
+              <h7> Wolfsburg, Germany </h7>
+              <p class="description">
+                <strong> Volkswagen AG.</strong>
+              </p>
+            </div>
           </div>
 
           <div class="timeline">
             <span class="icon fa fa-globe"></span>
-            <div  class="timeline-content">
-                <h3 class="title">VR Software Developer Intern</h3>
-                <h7 > September 2019 - November 2019</h7><br>
-                <h7 > Herzogenaurach, Germany </h7>
-                <p class="description">
-                <strong> Schaeffler Ag.</strong>
-                </p>
-              </div>
-        </div>
+            <div class="timeline-content">
+              <h3 class="title">Student Assistant</h3>
+              <h7> September 2018 - September 2020</h7><br>
+              <h7> Bayreuth, Germany </h7>
+              <p class="description">
+                <strong>University of Bayreuth</strong>
+              </p>
+            </div>
+          </div>
 
-        <div class="timeline">
-          <span class="icon fa fa-globe"></span>
-          <div  class="timeline-content">
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div class="timeline-content">
+              <h3 class="title">VR Software Developer Intern</h3>
+              <h7> September 2019 - November 2019</h7><br>
+              <h7> Herzogenaurach, Germany </h7>
+              <p class="description">
+                <strong> Schaeffler Ag.</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div class="timeline-content">
               <h3 class="title">Working Student</h3>
-              <h7 > August 2018 - September 2018</h7><br>
-              <h7 > Nuremberg, Germany </h7>
+              <h7> August 2018 - September 2018</h7><br>
+              <h7> Nuremberg, Germany </h7>
               <p class="description">
                 <strong> Exasol </strong>
               </p>
             </div>
+          </div>
+
+
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div class="timeline-content">
+              <h3 class="title">Master in Science Computer Science</h3>
+              <h7> October 2017 - Present</h7><br>
+              <h7> Bayreuth, Germany </h7>
+              <p class="description">
+                <strong> University of Bayreuth </strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div href="#" class="timeline-content">
+              <h3 class="title">Software Engineer</h3>
+              <h7> August 2014 - July 2017</h7><br>
+              <h7> Noida, India </h7>
+              <p class="description">
+                <strong>HCL Technologies LTD.</strong>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="timeline">
+            <span class="icon fa fa-globe"></span>
+            <div class="timeline-content">
+              <h3 class="title">B. Tech. in Computer Science and Engineering</h3>
+              <h7> August 2010 - June 2014 </h7><br>
+              <h7> Rohtak, India </h7>
+              <p class="description">
+                <strong> Maharshi Dayanand University </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Container (Portfolio Section) -->
+  <div id="portfolio" class="container-fluid text-center bg-grey">
+    <h1>Portfolio</h1><br>
+    <h4>VR Work</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./portfolioImages/Thesis/Day.PNG" alt="Driving Simulator" width="400" height="300">
+          <p><strong>VR Driving Simulator</strong></p>
+          <p>Thesis Project: VR Driving simulator with mid-air haptic Navigation</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet" target="_blank">
+            <img src="./portfolioImages/VRChatroom/User With names.PNG" alt="VR Chat Room" width="400" height="300"></a>
+          <p><strong>VR Chat Room</strong></p>
+          <p>VR room with voice chat and leap motion</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./portfolioImages/MAH/U turn left type 3.gif" alt="Mid-Air Haptic Navigation Pattern" width="400"
+            height="300">
+          <p><strong>Mid-Air Haptic Navigation Pattern</strong></p>
+          <p>Mid-Air Haptic Navigation Patterns using Ultrahaptics</p>
+        </div>
+      </div>
+    </div><br>
+    <h4>Unity Development</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./portfolioImages/Thesis/Sample Eye tracking data set.PNG" alt="Eye Tracking Analysis" width="400"
+            height="300">
+          <p><strong>Eye Tracking Analysis </strong></p>
+          <p>Eye Tracking analysis in VR Driving Simulator</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./portfolioImages/Thesis/Dynamic Route Navigation.png" alt="Dynamic Navigation" width="400"
+            height="300">
+          <p><strong>Dynamic Navigation </strong></p>
+          <p>Dynamic Navifation in VR Driving Simulator</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="https://githb.com/Saurabhbagh/Voice-Recording-and-Playback-in-Unity" target="_blank"><img
+              src="./portfolioImages/VoiceRecorder/StartScreen.jpeg" alt="Voice-Recording-and-Playback-in-Unity"
+              width="400" height="50"></a>
+          <p><strong>Voice Recording and Playback</strong></p>
+          <p>Voice Recording and Playback feature</p>
+        </div>
+      </div>
+    </div><br>
+    <hr>
+    <h4>To check out more work please visit my github profile: </h4><a href="https://github.com/Saurabhbagh"
+      target="newwindow"><i class="fa fa-github" style="font-size:36px;"></a></i>
+    <hr><br>
+    <h2>Achievements</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"University of Bayreuth Scholarship- Winter Semester 2019-2020"</h4>
+        </div>
+        <div class="item">
+          <h4>"3rd position in Study Smarter Hackathon, June 2019"</h4>
+        </div>
+
       </div>
 
-
-      <div class="timeline">
-        <span class="icon fa fa-globe"></span>
-        <div class="timeline-content">
-            <h3 class="title">Master in Science Computer Science</h3>
-            <h7 > October 2017 - Present</h7><br>
-            <h7 > Bayreuth, Germany </h7>
-            <p class="description">
-              <strong> University of Bayreuth </strong>
-            </p>
-          </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-
-      <div class="timeline">
-        <span class="icon fa fa-globe"></span>
-        <div href="#" class="timeline-content">
-            <h3 class="title">Software Engineer</h3>
-            <h7 > August 2014 - July 2017</h7><br>
-            <h7 > Noida, India </h7>
-            <p class="description">
-            <strong>HCL Technologies LTD.</strong>  
-            </p>
-          </div>
-    </div>
-
-
-    <div class="timeline">
-      <span class="icon fa fa-globe"></span>
-      <div  class="timeline-content">
-          <h3 class="title">B. Tech. in Computer Science and Engineering</h3>
-          <h7 > August 2010 - June 2014 </h7><br>
-          <h7 > Rohtak, India </h7>
-          <p class="description">
-          <strong> Maharshi Dayanand University </strong>
-          </p>
-        </div>
   </div>
-        </div>
-        </div>
-    </div>
-</div>
 
+  <!-- Container (Video Section) -->
+  <div id="videos" class="container-fluid">
+    <div class="text-center">
+      <h1>Videos</h1>
+      <h4>Old Videos from work</h4>
+    </div>
+    <div class="row slideanim">
+      <div class="col-xs-6">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1> Thor's Hammer Visualization</h1>
+            <p style="color:red">(Warning: Reduce the volume while watching the video below) </p>
+          </div>
+          <div class="panel-body">
+            <iframe  src="https://www.youtube.com/embed/d9drGwGNdMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
+            <!--<video width="100%" controls>
+            <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
+            -->
+            </video>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="panel panel-default text-center">
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h1>Portfolio</h1><br>
-  <h4>VR Work</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./portfolioImages/Thesis/Day.PNG" alt="Driving Simulator" width="400" height="300">
-        <p><strong>VR Driving Simulator</strong></p>
-        <p>Thesis Project: VR Driving simulator with mid-air haptic Navigation</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet" target="_blank"> <img src="./portfolioImages/VRChatroom/User With names.PNG" alt="VR Chat Room" width="400" height="300"></a>
-        <p><strong>VR Chat Room</strong></p>
-        <p>VR room with voice chat and leap motion</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./portfolioImages/MAH/U turn left type 3.gif" alt="Mid-Air Haptic Navigation Pattern" width="400" height="300">
-        <p><strong>Mid-Air Haptic Navigation Pattern</strong></p>
-        <p>Mid-Air Haptic Navigation Patterns using Ultrahaptics</p>
-      </div>
-    </div>
-  </div><br>
-  <h4>Unity Development</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./portfolioImages/Thesis/Sample Eye tracking data set.PNG" alt="Eye Tracking Analysis" width="400" height="300">
-        <p><strong>Eye Tracking Analysis </strong></p>
-        <p>Eye Tracking analysis in VR Driving Simulator</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./portfolioImages/Thesis/Dynamic Route Navigation.png" alt="Dynamic Navigation" width="400" height="300">
-        <p><strong>Dynamic Navigation </strong></p>
-        <p>Dynamic Navifation in VR Driving Simulator</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="https://githb.com/Saurabhbagh/Voice-Recording-and-Playback-in-Unity" target="_blank"><img src="./portfolioImages/VoiceRecorder/StartScreen.jpeg" alt="Voice-Recording-and-Playback-in-Unity" width="400" height="50" ></a>
-        <p><strong>Voice Recording and Playback</strong></p>
-        <p>Voice Recording and Playback feature</p>
-      </div>
-    </div>
-  </div><br>
-  <hr>
-  <h4>To check out more work please visit my github profile: </h4><a href="https://github.com/Saurabhbagh" target="newwindow" ><i class="fa fa-github" style="font-size:36px;"></a></i>
-  <hr><br>
-  <h2>Achievements</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      
-    </ol>
+          <div class="panel-heading">
+            <h1>Driving Simulator </h1>
+          </div>
+          <div class="panel-body">
+            <iframe src="https://www.youtube.com/embed/MNvDHOVRrfY" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"University of Bayreuth Scholarship- Winter Semester 2019-2020"</h4>
-      </div>
-      <div class="item">
-        <h4>"3rd position in Study Smarter Hackathon, June 2019"</h4>
-      </div>
-      
+            <!--<video width="100%" controls>
+            <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
+            -->
+            </video>
+          </div>
+        </div>
+        
+     
+
+
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Video Section) -->
-<div id="videos" class="container-fluid">
-  <div class="text-center">
-    <h1>Videos</h1>
-    <h4>Old Videos from work</h4>
   </div>
   <div class="row slideanim">
     <div class="col-xs-6">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Implementation of A* algo </h1>
+          <h1>Kiosk Visualization in VR</h1>
         </div>
         <div class="panel-body">
-          <iframe  src="https://www.youtube.com/embed/mVEqWWQUT5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
+          <iframe  src="https://www.youtube.com/embed/d0NWU0rvAdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
           <!--<video width="100%" controls>
-            <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
-            -->
+          <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
+          -->
           </video>
         </div>
       </div>
-    </div>    
-        <div class="col-xs-6">
-          <div class="panel panel-default text-center">
-            
+    </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default text-center">
+
         <div class="panel-heading">
-          <h1>Driving Simulator </h1>
+          <h1>Implementation of A* algo </h1>
         </div>
         <div class="panel-body">
-          <iframe  src="https://www.youtube.com/embed/MNvDHOVRrfY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
+          <iframe src="https://www.youtube.com/embed/mVEqWWQUT5w" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
           <!--<video width="100%" controls>
-            <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
-            -->
+          <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
+          -->
           </video>
         </div>
-       </div>      
-    </div>     
+      </div>
+      
    
-    
+
+
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h1 class="text-center">CONTACT</h1>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>You can find me on:</p>
-      <a href="https://www.linkedin.com/in/saurabh-bagh-99277972/" target="newwindow" ><i class="fa fa-linkedin-square" style="font-size:36px;"></a></i>
-      <a href="https://github.com/Saurabhbagh" target="newwindow" ><i class="fa fa-github" style="font-size:36px;"></a></i>
-      <!--<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>-->
-      
-    </div>
-    
-    <div class="col-sm-7 slideanim">
-      <!--
+  <!-- Container (Contact Section) -->
+
+  
+  <div id="contact" class="container-fluid bg-grey">
+    <h1 class="text-center">CONTACT</h1>
+    <div class="row">
+      <div class="col-sm-5">
+        
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="saurabh-bagh-99277972"><a class="LI-simple-link" href='https://de.linkedin.com/in/saurabh-bagh-99277972?trk=profile-badge'>Saurabh Bagh</a></div>
+        
+        <!--<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>-->
+
+      </div>
+      <div class="col-sm-5">
+        <p>You can find me on:</p>
+        <a href="https://www.linkedin.com/in/saurabh-bagh-99277972/" target="newwindow"><i class="fa fa-linkedin-square"
+          style="font-size:36px;"></a></i>
+      <a href="https://github.com/Saurabhbagh" target="newwindow"><i class="fa fa-github"
+          style="font-size:36px;"></a></i>
+        </div>
+      <div class="col-sm-7 slideanim">
+        <!--
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -671,54 +965,55 @@
       </div>
     </div>
   -->
-  </div>
-</div>
+      </div>
+    </div>
 
 
 
-<footer class="container-fluid text-center">
-  <a href="#SaurabhBagh" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p></a></p>
-</footer>
+    <footer class="container-fluid text-center">
+      <a href="#SaurabhBagh" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p></a></p>
+    </footer>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+            // Store hash
+            var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function () {
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $(window).scroll(function () {
+          $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+    </script>
 
 </body>
+
 </html>
