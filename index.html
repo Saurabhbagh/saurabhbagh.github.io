@@ -43,7 +43,7 @@
 
 </head>
 
-<body id="SaurabhBagh" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="SaurabhBagh" data-spy="scroll" data-target=".navbar" data-offset="60" onload="typeWriter()">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWV99N9" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -64,6 +64,7 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#Timeline">TIMELINE</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#achievements">ACHIEVEMENTS</a></li>
           <li><a href="#videos">VIDEOS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -72,8 +73,34 @@
   </nav>
 
   <div class="jumbotron text-center w3-black  ">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <div class="thumbnail">
+        <img src="./portfolioImages/photo/776EFFE6-0236-4CF9-85A3-167439186728_1_201_a.jpeg"  alt="Saurabh Bagh">
+        <p id="Welcome" style="color: black;"></p>
+      </div>
+        </div>
+    <div class="col-sm-3">
     <h1>Saurabh Bagh</h1>
     <p>Doing Something</p>
+    
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+  <script>
+    var i = 0;
+    var txt = 'Welcome to my webpage';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("Welcome").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
     <!--
   <form>
     <div class="input-group">
@@ -94,7 +121,7 @@
         <h2>Saurabh Bagh</h2>
         <h3>VR Game Developer| Software Developer | SEO Enthusiast</h3>
         <h4>University of Bayreuth</h4>
-        <p>Master Student at the University of Bayreuth in Computer Science.</p>
+        <p>Completed Master's in Computer Science at the University of Bayreuth and did internships at various companies like Schaeffler and Volkswagen. Additionally, I have 3 years of work experience as a Software Engineer at HCL Technologies.</p>
       </div>
       <div class="col-sm-4">
 
@@ -349,7 +376,12 @@
     <h4>To check out more work please visit my github profile: </h4><a href="https://github.com/Saurabhbagh"
       target="newwindow"><i class="fa fa-github" style="font-size:36px;"></a></i>
     <hr><br>
-    <h2>Achievements</h2>
+    
+    <div id="achievements" class="container-fluid">
+      <div class="text-center">
+        <h1>Achievements</h1>
+      </div>
+      
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -379,6 +411,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
   </div>
 
   <!-- Container (Video Section) -->
