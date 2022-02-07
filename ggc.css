@@ -1,0 +1,79 @@
+/* german grade calculator */
+
+@media only screen and (max-width: 950px) {
+
+/*for first block*/
+.first_block tr {
+    display: flex;
+}
+
+.first_block td {
+    width: -webkit-fill-available;
+    padding: 0px;
+}
+
+/*second block modification*/
+.second_block tr {
+    display: flex;
+}
+.second_block td {
+    padding: 0px;
+    width:-webkit-fill-available;
+}
+
+/*grading class */
+
+.grading tr {
+    display: flex;
+}
+
+.grading td {
+    padding: 0px;
+    width:-webkit-fill-available;
+}
+
+/*grading 2*/
+.grading2 tr {
+    display: flex;
+}
+
+.grading2 td {
+    padding: 0px;
+    /* width: 104px; */
+    width: -webkit-fill-available;
+}
+
+/*grading 3*/
+
+.grading3 tr {
+    display: flex;
+}
+
+.grading3 td {
+    width: -webkit-fill-available;
+    padding: 0px;
+}
+
+
+/*title*/
+h2.ekit-heading--title.elementskit-section-title.ekit-heading__title-has-border.start {
+   font-size: unset;
+}
+}
+
+
+@media only screen and (max-width: 300px) {
+table {
+    font-size: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
