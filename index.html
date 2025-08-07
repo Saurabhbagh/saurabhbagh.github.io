@@ -1,814 +1,1404 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0EKP89MMQ4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EKP89MMQ4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-0EKP89MMQ4');
-  </script>
-  <title>Saurabh Bagh</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-  <link rel="stylesheet" href="./saurabhbagh.css">
-
-
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WWV99N9');</script>
-  <!-- End Google Tag Manager -->
-
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-</head>
-
-<body id="SaurabhBagh" data-spy="scroll" data-target=".navbar" data-offset="60" >
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWV99N9" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <nav class="navbar navbar-default navbar-fixed-top w3-black">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#myPage"> <img src="./favicon_io/android-chrome-192x192.png" width="50px"
-            height="50px"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#WorkTimeline">Work Experience</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#Project">Project Details</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#videos">Videos</a></li>
-          <li><a href="#contact">Contact</a></li>
-          
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <script>
-    function OpenResume() {
-      window.open("./Website.pdf ");
-    }
+      gtag("config", "G-0EKP89MMQ4");
     </script>
-  <div class="jumbotron text-center">
-    <div class="row">
-      
-      
-    
-    <div class="col-sm-12">
-      <h1>Saurabh Bagh</h1>
-      <button type="button" class="btn btn-danger"  onclick="OpenResume()"> Resume</button>
-      </div>
-  </div>
-  
-    
- 
+    <title>Saurabh Bagh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  </div>
+    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom Modern Styles -->
+    <link rel="stylesheet" href="./saurabhbagh.css" />
+    <style>
+      body {
+        font-family: "Lato", Arial, sans-serif;
+        background: #f8f9fa;
+        color: #222;
+      }
+      .navbar {
+        background: rgba(0, 0, 0, 0.85) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: background 0.3s;
+      }
+      .navbar-brand img {
+        border-radius: 12px;
+      }
+      .hero-section {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+        color: #fff;
+        text-align: center;
+        padding: 80px 0 40px 0;
+      }
+      .hero-section h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        letter-spacing: 2px;
+      }
+      .hero-section h3 {
+        font-weight: 400;
+        color: #e0e0e0;
+        margin-bottom: 1.5em;
+      }
+      .btn-resume {
+        font-size: 1.2rem;
+        padding: 0.75em 2.5em;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+        color: #fff;
+        border: none;
+        box-shadow: 0 2px 8px rgba(221, 36, 118, 0.15);
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+      .btn-resume:hover {
+        background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+        box-shadow: 0 4px 16px rgba(221, 36, 118, 0.25);
+        color: #fff;
+      }
+      section,
+      .container-fluid {
+        margin-bottom: 3rem;
+      }
+      .card,
+      .thumbnail,
+      .panel {
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(44, 83, 100, 0.08);
+        border: none;
+        overflow: hidden;
+        margin-bottom: 2rem;
+      }
+      .card img,
+      .thumbnail img {
+        border-radius: 18px 18px 0 0;
+        object-fit: cover;
+      }
+      .progress {
+        height: 1.2rem;
+        border-radius: 8px;
+        background: #e9ecef;
+      }
+      .progress-bar {
+        background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+      }
+      .slideanim {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
+      }
+      .slide {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .bg-grey {
+        background: #f4f6fb !important;
+      }
+      .bg-blue {
+        background: #2c5364 !important;
+        color: #fff !important;
+        border-radius: 8px;
+        padding: 0.5em 0;
+      }
+      .container-skill {
+        margin-bottom: 1em;
+      }
+      .fa-github,
+      .fa-linkedin,
+      .fa-envelope {
+        color: #222;
+        transition: color 0.2s;
+      }
+      .fa-github:hover,
+      .fa-linkedin:hover,
+      .fa-envelope:hover {
+        color: #dd2476;
+      }
 
-  <!-- Container (About Section) -->
-  <div id="about" class="container-fluid ">
-    <div class="row">
-      <div class="col-sm-8">
-        <h1>About Me</h1><br>
-        <h2>Saurabh Bagh</h2>
-        <h3>VR Game Developer| Software Developer | SEO Enthusiast</h3>
-        <h4>University of Bayreuth</h4>
-        <p>Completed Master's in Computer Science at the University of Bayreuth and did internships at various companies like Schaeffler and Volkswagen. Additionally, I have 3 years of work experience as a Software Engineer at HCL Technologies.</p>
-             
-      </div>
-      <div class="col-sm-4">
+      /* Carousel custom styling */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
 
+      /* Better video responsiveness */
+      .ratio {
+        border-radius: 0 0 18px 18px;
+        overflow: hidden;
+      }
 
-        <h1>Programming Skills</h1><br>
+      /* Enhanced mobile responsiveness */
+      @media (max-width: 991px) {
+        .hero-section h1 {
+          font-size: 2.5rem;
+        }
+        .navbar-nav {
+          text-align: center;
+        }
+        .card-body {
+          padding: 1rem;
+        }
+      }
 
+      @media (max-width: 767px) {
+        .hero-section h1 {
+          font-size: 2.1rem;
+        }
+        .hero-section {
+          padding: 60px 0 20px 0;
+        }
+        .hero-section h3 {
+          font-size: 1.1rem;
+        }
+        section,
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .btn-resume {
+          font-size: 1rem;
+          padding: 0.6em 2em;
+        }
+      }
 
-        <p><strong>C#</strong></p>
-        <div class="containerskill">
-          <div class="skills Unity3D"></div>
-        </div>
+      @media (max-width: 575px) {
+        .hero-section h1 {
+          font-size: 1.8rem;
+        }
+        .progress {
+          height: 1rem;
+        }
+        .card {
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
 
-        <p><strong>Python</strong></p>
-        <div class="containerskill">
-          <div class="skills css"></div>
-        </div>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WWV99N9");
+    </script>
+    <!-- End Google Tag Manager -->
 
-        <p><strong>Java</strong></p>
-        <div class="containerskill">
-          <div class="skills js"></div>
-        </div>
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
+  </head>
 
-        <p><strong>R</strong></p>
-        <div class="containerskill">
-          <div class="skills php"></div>
-        </div>
-      
-      
-      
-      
-      </div>
-    
-    
-    </div>
-
-    <hr>
-    <h1>Currently Working On-</h1><br>
-    <div class="col-sm-4">
-
-      <div class="card">
-        <img src="./portfolioImages/current/braille-alphabet-100_2400x1350.jpg" alt="Avatar" style="width:100%">
-        <div class="containeryolo">
-          <h4 ><b >Braille Project</b></h4>
-          <p>Designing braille patterns on the Ultrahaptics</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-
-      <div class="card">
-        <img src="./portfolioImages/current/Pupillabs.jpg" alt="Avatar" style="width:100%">
-        <div class="containeryolo">
-          <h4><b>Phasespace Motion Capture</b></h4>
-          <p>Integration with  an Avatar in Unity</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-
-      <div class="card">
-        <img src="./portfolioImages/Thesis/Day.PNG" alt="Avatar" style="width:100%">
-        <div class="containeryolo">
-          <h4><b>Driving Simulator</b></h4>
-          <p>Integration with Pupil Labs eyetracking with Motion platform</p>
-        </div>
-      </div>
-    </div>
-        
-        
-        
-  </div>
-
-  <div class="container-fluid bg-grey">
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-road logo slideanim"></span>
-      </div>
-      <div class="col-sm-8 " >
-
-        <h1>Professional Skills</h1><br>
-        
-          <div class="container">
-            <!--Software expertiese-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>Software Expertise</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
-              </div>
-              
-            </div>
-            
-            <!--CMS-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>CMS</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">WordPress, Fiona</p>
-              </div>
-              
-            </div>
-          
-            <!--SEO Testing-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>SEO Testing</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">Screaming Frog</p>
-              </div>
-              
-            </div>
-           
-            <!--Database-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>Database</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">My SQL, Oracle 11g, MS Access</p>
-              </div>
-              
-            </div>
-            
-
-            <!--Bi Tools-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>BI - Web Tool</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">Tableau, Google Analytics</p>
-              </div>
-              
-            </div>
-            
-
-            <!--Transferable skills-->
-            <div class="row">
-              <div class="col-sm-2">
-                <strong>Transferable skills</strong>
-              </div>
-              <div class="col-sm-4">
-                <p align="left">Very strong verbal and communication skills, ability
-                  to achieve goals in a highly innovative and fastpaced
-                  environment</p>
-                </div>
-              
-            </div>
-            
-
-
-          </div>
-          <!--<table class="table" style="width: 504.17px;" border="0" cellspacing="0" cellpadding="0">
-            <tbody>
-              <tr>
-                <td><strong>Software Expertise</strong></td>
-                <td>
-                  <p>Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p><strong>CMS</strong></p>
-                </td>
-                <td>
-                  <p>WordPress, Fiona</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p><strong>SEO Testing</strong></p>
-                </td>
-                <td>
-                  <p>Screaming Frog</p>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Database</strong></td>
-                <td>My SQL, Oracle 11g, MS Access</td>
-              </tr>
-              <tr>
-                <td><strong>BI Tool</strong></td>
-                <td>Tableau</td>
-              </tr>
-              <tr>
-                <td><strong>Transferable skills</strong></td>
-                <td>Very strong verbal and communication skills, ability<br />to achieve goals in a highly innovative
-                  and fastpaced<br />environment</td>
-              </tr>
-            </tbody>
-          </table>-->
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- Container (Timeline Section) -->
-  <div id="WorkTimeline" class="container-fluid text-center">
-    <h1>Work Experience</h1>
-    <div class="row slideanim">
-      <div class="col-md-12">
-        <div class="main-timeline2">
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Co-Founder</h3>
-              <h7> January 2021 - Present</h7><br>
-
-              <p class="description">
-                <strong>HowToAbroad.com</strong>
-              </p>
-            </div>
-          </div>
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Software Developer</h3>
-              <h7> December 2022 - December 2024</h7><br>
-              <h7> Berlin, Germany </h7>
-              <p class="description">
-                <strong>Verra</strong>
-              </p>
-            </div>
-          </div>
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Unity Developer</h3>
-              <h7> August 2021 - November 2022</h7><br>
-              <h7> Stuttgart, Germany </h7>
-              <p class="description">
-                <strong>Technology and Strategy</strong>
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Agora Platform Technical Lead</h3>
-              <h7> August 2021 - September 2021</h7><br>
-              <h7> Munich, Germany </h7>
-              <p class="description">
-                <strong>Hochschule München</strong>
-              </p>
-            </div>
-          </div>
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Research Assistant</h3>
-              <h7> September 2020 - September 2021</h7><br>
-              <h7> Bayreuth, Germany </h7>
-              <p class="description">
-                <strong> University of Bayreuth</strong>
-              </p>
-            </div>
-          </div>
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Intern VR Engineer</h3>
-              <h7> January 2020 - September 2020</h7><br>
-              <h7> Wolfsburg, Germany </h7>
-              <p class="description">
-                <strong> Volkswagen AG.</strong>
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Student Assistant</h3>
-              <h7> September 2018 - September 2020</h7><br>
-              <h7> Bayreuth, Germany </h7>
-              <p class="description">
-                <strong>University of Bayreuth</strong>
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">VR Software Developer Intern</h3>
-              <h7> September 2019 - November 2019</h7><br>
-              <h7> Herzogenaurach, Germany </h7>
-              <p class="description">
-                <strong> Schaeffler Ag.</strong>
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">Working Student</h3>
-              <h7> August 2018 - September 2018</h7><br>
-              <h7> Nuremberg, Germany </h7>
-              <p class="description">
-                <strong> Exasol </strong>
-              </p>
-            </div>
-          </div>
-
-
-          
-
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div href="#" class="timeline-content">
-              <h3 class="title">Software Engineer</h3>
-              <h7> August 2014 - July 2017</h7><br>
-              <h7> Noida, India </h7>
-              <p class="description">
-                <strong>HCL Technologies LTD.</strong>
-              </p>
-            </div>
-          </div>
-
-
-          
+  <body id="SaurabhBagh">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WWV99N9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Modern Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#SaurabhBagh"
+          ><img
+            src="./favicon_io/android-chrome-192x192.png"
+            width="44"
+            height="44"
+            alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#WorkTimeline">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Project">Project Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="Education" class="container-fluid text-center  bg-grey">
-    <h1>Education</h1>
-    <div class="row slideanim">
-      <div class="col-md-12">
-        <div class="main-timeline2">
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">M.Sc. in Computer Science</h3>
-              <h7> October 2017 - November 2020</h7><br>
-              <h7> Bayreuth, Germany </h7>
-              <p class="description">
-                <strong> University of Bayreuth </strong>
-              </p>
-            </div>
-          </div>
-          <div class="timeline">
-            <span class="icon fa fa-globe"></span>
-            <div class="timeline-content">
-              <h3 class="title">B. Tech. in Computer Science and Engineering</h3>
-              <h7> August 2010 - June 2014 </h7><br>
-              <h7> Rohtak, India </h7>
-              <p class="description">
-                <strong> Maharshi Dayanand University </strong>
-              </p>
-            </div>
-          </div>
-          </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <h1>Saurabh Bagh</h1>
+        <h3>
+          Co-Founder HowToAbroad | VR Game Developer | Software Developer | SEO
+          Enthusiast
+        </h3>
+        <div
+          class="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center"
+        >
+          <button class="btn btn-resume" onclick="window.open('./Website.pdf')">
+            <i class="fa-solid fa-file-arrow-down me-2"></i>Resume
+          </button>
+          <a
+            href="https://app.howtoabroad.com"
+            target="_blank"
+            class="btn btn-outline-light btn-lg px-4 py-2"
+            style="
+              border: 2px solid #fff;
+              border-radius: 30px;
+              font-weight: 600;
+              transition: all 0.3s ease;
+            "
+            onmouseover="this.style.background='#fff'; this.style.color='#2c5364'"
+            onmouseout="this.style.background='transparent'; this.style.color='#fff'"
+          >
+            <i class="fa-solid fa-external-link me-2"></i>Check My Current
+            Project - App.HowToAbroad.com
+          </a>
         </div>
       </div>
-      </div>
-
-  <!-- Container (Portfolio Section) -->
-  <div id="portfolio" class="container-fluid text-center ">
-    <h1>Portfolio</h1><br>
-    <h4 class="container-fluid text-center bg-blue ">VR Work</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="#Project">
-          <img src="./portfolioImages/Thesis/Day.PNG" alt="Driving Simulator" width="400" height="300"></a>
-          <p><strong>VR Driving Simulator - (Private Repository)</strong></p>
-          <p>Thesis Project: VR Driving simulator with mid-air haptic Navigation</p>
-         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet" target="_blank">
-            <img src="./portfolioImages/VRChatroom/User With names.PNG" alt="VR Chat Room" width="400" height="300"></a>
-          <p><strong>VR Chat Room</strong></p>
-          <p>VR room with voice chat and leap motion</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="#Project">
-          <img src="./portfolioImages/MAH/U turn left type 3.gif" alt="Mid-Air Haptic Navigation Pattern" width="400"
-            height="300"></a>
-          <p><strong>Mid-Air Haptic Navigation Pattern - (Private Repository)</strong></p>
-          <p>Mid-Air Haptic Navigation Patterns using Ultrahaptics</p>
-        </div>
-      </div>
-    </div><br>
-    <hr>
-    <h4 class="container-fluid text-center bg-blue ">Unity Development</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="#Project">
-          <img src="./portfolioImages/Thesis/Sample Eye tracking data set.PNG" alt="Eye Tracking Analysis" width="400"
-            height="300"></a>
-          <p><strong>Eye Tracking Analysis - (Private Repository) </strong></p>
-          <p>Eye Tracking analysis in VR Driving Simulator</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="#Project">
-          <img src="./portfolioImages/Thesis/Dynamic Route Navigation.png" alt="Dynamic Navigation" width="400"
-            height="300"> </a>
-          <p><strong>Dynamic Navigation - (Private Repository) </strong></p>
-          <p>Dynamic Navigation in VR Driving Simulator</p>
-        </div>
-      </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail ">
-          <a href="https://github.com/Saurabhbagh/Voice-Recording-and-Playback-in-Unity" target="_blank"><img
-              src="./portfolioImages/VoiceRecorder/StartScreen.jpeg" alt="Voice-Recording-and-Playback-in-Unity"
-              width="400" height="50"></a>
-          <p><strong>Voice Recording and Playback</strong></p>
-          <p>Voice Recording and Playback feature</p>
-        </div>
-      </div>
-    </div><br>
-    <hr>
-    <h4 class="container-fluid text-center bg-blue ">Android Development in Unity</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-4 ">
-        <div class="thumbnail ">
-          <a href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich" target="_blank"><img
-              src="./portfolioImages/EspMunich/5.jpeg" alt="EspMunich Start Screen"
-              width="400" height="50"></a>
-          <p><strong>Start Screen</strong></p>
-          <p>Enter UserName</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4 ">
-        <div class="thumbnail ">
-          <a href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich" target="_blank"><img
-              src="./portfolioImages/EspMunich/6.jpeg" alt="Menu Selection Screen"
-              width="400" height="50"></a>
-          <p><strong>Menu Selection Screen</strong></p>
-          <p>Select Menu</p>
-        </div>
-      </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail ">
-          <a href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich" target="_blank"><img
-              src="./portfolioImages/EspMunich/3.jpeg" alt="Game Play"
-              width="400" height="50"></a>
-          <p><strong>Game Play</strong></p>
-          <p>Select one of the correct options</p>
-        </div>
-      </div>
-    </div><br>
-    <hr>
-    <h4>To check out more work please visit my github profile: </h4><a href="https://github.com/Saurabhbagh"
-      target="newwindow"><i class="fa fa-github" style="font-size:36px;"></a></i>
-    <hr>
-    <div id="Project">
-    <h1 >Projects</h1>
-    <h3>Master Thesis</h3>
-    <h4>The usability of Mid-Air Haptics in Car Navigation systems - Abstract</h4>
-    <h4 style="color:red;">Tech Stack: Unity, C#, Python, AWS, Ultrahaptics, Tableau</h5>
-    <p align="left" >While several studies have examined the usability of mid-air haptic sensations within the automotive industry, previous research has not yet examined the use of mid-air haptics sensations within in-car navigation systems. Therefore, this study aimed to assess whether mid-air haptic sensations could also be of use to in-car navigation systems. This study specifically aimed to examine whether the inclusion of mid-air haptic sensations within the in-car navigation system improves the user experience of the in-car navigation system and helps to decrease the amount of driver distraction in terms of lane deviation and the eyes off the road time. The results indicate that the mid-air haptic patterns that were associated with specific navigation prompts helped drivers in understanding directions and reaching their destination in a timely manner. The study also indicated that people found the mid-air haptic sensations to be reassuring as they provide continuous feedback as to where one has to go. Additionally, it also made it easier for users to estimate the distance they had to travel before taking a turn. Moreover, the integration of mid-air haptic patterns within the in-car navigation system resulted in a smaller value for the mean lane deviation and a lesser eyes off the road time as compared to the mean lane deviation and eyes of the road time associated with the baseline condition which included a navigation system consisting of voice guided and visual navigation. Along with this, the results also indicated that users were the most distracted while only using voice guided and visual navigation. Based on the findings in this study, it can thus be concluded that integrating mid-air haptic sensations within the in-car navigation system serves to minimize driver distraction and optimize navigational comprehensibility.</p>
-    <hr>
-    <h3>Mini Project </h3>
-    <h4>Multi-Player VR play area with voice chat and leap motion - Abstract</h4>
-    <h4 style="color:red;">Tech Stack: Unity, C#, Unity networking</h5>
-    <p align="left">The goal of this project was to build a VR meeting room, with leap motion hand interaction. The meeting room was build over UNET and could be accessed from anywhere in the world. In this, each user could be uniquely identified and all the hand movement were captured and sent to the network. The basic inverse kinematic algorithm was used to replicate the hand motion based on the controller's position. Users also have the ability to have a decent conversation and could play with the ball on the scene if UltraLeap is enabled.</p>
-    <p align="left"><a href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet" target="_blank"><strong> See Project</strong></a></p>
-    <hr>
-    <h3>Major Project</h3>
-    <h4>Benchmark Evaluation of Thunder X2 processor(HPC) - Abstract</h4>
-    <h4 style="color:red;">Tech Stack:  Linux, C++, HPC, DGMM, HPL</h5>
-    <p align="left">The goal of this project was to evaluate benchmark of the ARM thunder X2 processor using HPL and DGEMM algorithm and then compare it with the Intel's core I7 and Xeon processors present in the University at that time. With standard gcc and clang compilers (the latest version present at that time) the performance of ARM thunder X2 processor was not up to mark but with ARM compiler there was a significant increase in performance. </p>
-    
-    <hr>
-    <h3>Seminar</h3>
-    <h4>Wireless VR - Abstract</h4>
-    <h4 style="color:red;">Tech Stack: Java, Netbeans, Wireless VR research papers</h5>
-    <p align="left"> The main goal of this seminar was to understand the working the working of wireless VR- How data can be transmitted seamlessly with minimum latency. A side project was created called VR interpolated images to tackle the lag. In this when the user moves around the previous image that was in the frame will be interpolated as per the user head movement. The interpolation scheme replicated the row or column pixels of the image in the last frame depending on the movement.</p>
-    <p align="left"><a href="https://github.com/Saurabhbagh/VRInterpolatedImage" target="_blank"><strong> See Project</strong></a></p>
- <hr>
-  </div>
-    <br>
-    
-    <div id="achievements" class="container-fluid text-center bg-grey">
-      <div class="text-center">
-        <h1>Achievements</h1>
-      </div>
-      
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <h4>"University of Bayreuth Scholarship- Winter Semester 2019-2020"</h4>
-        </div>
-        <div class="item">
-          <h4>"3rd position in Study Smarter Hackathon, June 2019"</h4>
-        </div>
-
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  </div>
-
-  <!-- Container (Video Section) -->
-  <div id="videos" class="container-fluid">
-    <div class="text-center">
-      <h1>Videos</h1>
-      <h4>Past Project Video Portfolio</h4>
-    </div>
-    <div class="row slideanim">
-      <div class="col-sm-6">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h1> Thor's Hammer Visualization</h1>
-            <p style="color:red">(Warning: Reduce the volume while watching the video below) </p>
-          </div>
-          <div class="panel-body videoWrapper">
-            <iframe src="https://www.youtube.com/embed/d9drGwGNdMM" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-
-
-
-          </div>
-
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default text-center">
-
-          <div class="panel-heading">
-            <h1>Driving Simulator </h1>
-            <p style="color:red">(Warning: Reduce the volume while watching the video below) </p>
-          </div>
-          <div class="panel-body videoWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iIzXihgfgmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <!--<video width="100%" controls>
-            <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
-            -->
-
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-    <div class="row slideanim">
-      <div class="col-sm-6">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h1>Kiosk Visualization in VR</h1>
-          </div>
-          <div class="panel-body videoWrapper">
-            <iframe src="https://www.youtube.com/embed/d0NWU0rvAdU" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-
-            <!--<video width="100%" controls>
-          <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
-          -->
-
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default text-center">
-
-          <div class="panel-heading">
-            <h1>Implementation of A* algo </h1>
-          </div>
-          <div class="panel-body videoWrapper">
-            <iframe class="iframe" src="https://www.youtube.com/embed/mVEqWWQUT5w" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-
-            <!--<video width="100%" controls>
-          <source src="./portfolioImages/Thesis/Video/NavigationProject - GraphBasedAstaralgo - NavigationTestMapwithRoads - PC, Mac & Linux Standalone - Unity 2019.2.18f1 Personal_ _DX11_ 2020-04-16 20-01-45.mp4" type="video/mp4">
-          -->
-
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-
-
-    <div id="contact" class="container-fluid bg-grey">
-      <h1 class="text-center">CONTACT</h1>
-
-
-      <div class="col-sm-6">
-        <p>You can find me on:</p>
-        <a href="https://www.linkedin.com/in/saurabh-bagh-99277972/" target="newwindow"><i class="fa fa-linkedin-square"
-            style="font-size:36px;"></a></i>
-        <a href="https://github.com/Saurabhbagh" target="newwindow"><i class="fa fa-github"
-            style="font-size:36px;"></a></i>
-      </div>
-
-      <div class="col-sm-6">
-        <p>Email:</p>
-        <a href="mailto:Saurabh.bagh@uni-bayreuth.de "<i class="glyphicon glyphicon-envelope logo slideanim"
-          style="font-size:36px;"></i> </a>
-          <br/>Saurabh.bagh@uni-bayreuth.de
-      </div>
-      
-      <!--
-          <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
---> 
-        </div>
-         
-     
-
-
-
-      <footer class="container-fluid text-center">
-        <a href="#SaurabhBagh" title="To Top">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p></a></p>
-      </footer>
-
-      <script>
-        $(document).ready(function () {
-          // Add smooth scrolling to all links in navbar + footer link
-          $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-            // Make sure this.hash has a value before overriding default behavior
+    </section>
+    <script>
+      // Smooth scroll for anchor links
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("a.nav-link").forEach(function (link) {
+          link.addEventListener("click", function (e) {
             if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 900, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
+              e.preventDefault();
+              const hash = this.hash;
+              document
+                .querySelector(hash)
+                .scrollIntoView({ behavior: "smooth" });
+            }
           });
+        });
+        // Animate on scroll
+        function revealOnScroll() {
+          document.querySelectorAll(".slideanim").forEach(function (el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+              el.classList.add("slide");
+            }
+          });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-          $(window).scroll(function () {
-            $(".slideanim").each(function () {
-              var pos = $(this).offset().top;
+    <!-- Container (About Section) -->
 
-              var winTop = $(window).scrollTop();
-              if (pos < winTop + 600) {
-                $(this).addClass("slide");
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="card p-4 shadow-sm h-100">
+            <h1 class="mb-3">About Me</h1>
+            <h2 class="fw-bold">Saurabh Bagh</h2>
+            <h4 class="text-secondary mb-2">
+              Co-Founder HowToAbroad | VR Game Developer | Software Developer |
+              SEO Enthusiast
+            </h4>
+            <h5 class="mb-3">University of Bayreuth</h5>
+            <p>
+              Completed Master's in Computer Science at the University of
+              Bayreuth with hands-on experience in VR/AR development, computer
+              graphics, and haptic technologies. Currently Co-Founder of
+              HowToAbroad.com, with over 7+ years of professional experience
+              spanning VR engineering at Volkswagen AG, Unity development,
+              software engineering, and research roles. Previously worked as a
+              Software Developer at Verra (Berlin), Unity Developer at
+              Technology and Strategy (Stuttgart), and held various technical
+              positions including VR Software Developer Intern at Schaeffler AG
+              and Research Assistant at University of Bayreuth. Started career
+              as a Software Engineer at HCL Technologies with 3 years of
+              foundational experience in enterprise software development.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card p-4 shadow-sm h-100">
+            <h3 class="mb-4">Programming Skills</h3>
+            <div class="mb-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fa-brands fa-csharp fa-lg me-2 text-primary"></i
+                ><span class="fw-bold">C#</span>
+              </div>
+              <div class="progress mb-2" style="height: 10px">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fa-brands fa-python fa-lg me-2 text-warning"></i
+                ><span class="fw-bold">Python</span>
+              </div>
+              <div class="progress mb-2" style="height: 10px">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fa-brands fa-java fa-lg me-2 text-danger"></i
+                ><span class="fw-bold">Java</span>
+              </div>
+              <div class="progress mb-2" style="height: 10px">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fa-solid fa-r fa-lg me-2 text-success"></i
+                ><span class="fw-bold">R</span>
+              </div>
+              <div class="progress mb-2" style="height: 10px">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <h2 class="mb-4 text-center">Currently Working On</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./portfolioImages/current/braille-alphabet-100_2400x1350.jpg"
+              class="card-img-top"
+              alt="Braille Project"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Braille Project</h5>
+              <p class="card-text">
+                Designing braille patterns on the Ultrahaptics
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./portfolioImages/current/Pupillabs.jpg"
+              class="card-img-top"
+              alt="Phasespace Motion Capture"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Phasespace Motion Capture</h5>
+              <p class="card-text">Integration with an Avatar in Unity</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./portfolioImages/Thesis/Day.PNG"
+              class="card-img-top"
+              alt="Driving Simulator"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Driving Simulator</h5>
+              <p class="card-text">
+                Integration with Pupil Labs eyetracking with Motion platform
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+          <i class="fa-solid fa-road fa-4x text-secondary slideanim"></i>
+        </div>
+        <div class="col-lg-8">
+          <div class="card p-4 shadow-sm h-100">
+            <h2 class="mb-4">Professional Skills</h2>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-laptop-code fa-lg me-2 text-primary"></i
+                  ><span class="fw-bold">Software Expertise</span>
+                </div>
+                <p class="mb-2">Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-cms fa-lg me-2 text-success"></i
+                  ><span class="fw-bold">CMS</span>
+                </div>
+                <p class="mb-2">WordPress, Fiona</p>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-search fa-lg me-2 text-warning"></i
+                  ><span class="fw-bold">SEO Testing</span>
+                </div>
+                <p class="mb-2">Screaming Frog</p>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-database fa-lg me-2 text-info"></i
+                  ><span class="fw-bold">Database</span>
+                </div>
+                <p class="mb-2">MySQL, Oracle 11g, MS Access</p>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-chart-bar fa-lg me-2 text-danger"></i
+                  ><span class="fw-bold">BI - Web Tool</span>
+                </div>
+                <p class="mb-2">Tableau, Google Analytics</p>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-comments fa-lg me-2 text-secondary"></i
+                  ><span class="fw-bold">Transferable Skills</span>
+                </div>
+                <p class="mb-2">
+                  Very strong verbal and communication skills, ability to
+                  achieve goals in a highly innovative and fast-paced
+                  environment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="WorkTimeline" class="container py-5">
+      <h2 class="mb-4 text-center">Work Experience</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Co-Founder</h5>
+              <h6 class="card-subtitle mb-2 text-muted">HowToAbroad.com</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Remote
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Jan 2021 - Present
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Software Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Verra</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Berlin, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Dec 2022 - Dec 2024
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Unity Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Technology and Strategy
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Stuttgart, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2021 - Nov 2022
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Agora Platform Technical Lead</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Hochschule München</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Munich, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2021 - Sep 2021
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Research Assistant</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                University of Bayreuth
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Bayreuth, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Sep 2020 - Sep 2021
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Intern VR Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Volkswagen AG</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Wolfsburg, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Jan 2020 - Sep 2020
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Student Assistant</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                University of Bayreuth
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Bayreuth, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Sep 2018 - Sep 2020
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">VR Software Developer Intern</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Schaeffler AG</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Herzogenaurach,
+                Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Sep 2019 - Nov 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Working Student</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Exasol</h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Nuremberg, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2018 - Sep 2018
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                HCL Technologies LTD.
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Noida, India
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2014 - Jul 2017
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="Education" class="container py-5 bg-grey">
+      <h2 class="mb-4 text-center">Education</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">M.Sc. in Computer Science</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                University of Bayreuth
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Bayreuth, Germany
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Oct 2017 - Nov 2020
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                B. Tech. in Computer Science and Engineering
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Maharshi Dayanand University
+              </h6>
+              <div class="mb-2">
+                <i class="fa-solid fa-location-dot me-1"></i> Rohtak, India
+              </div>
+              <div class="mb-2">
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2010 - Jun 2014
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5">
+      <h2 class="mb-4 text-center">Portfolio</h2>
+
+      <!-- VR Work -->
+      <div class="mb-5">
+        <h4 class="text-center bg-blue mb-4 p-3">VR Work</h4>
+        <div class="row g-4 slideanim">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/Thesis/Day.PNG"
+                class="card-img-top"
+                alt="Driving Simulator"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VR Driving Simulator</h5>
+                <p class="card-text">
+                  Thesis Project: VR Driving simulator with mid-air haptic
+                  Navigation
+                </p>
+                <a href="#Project" class="btn btn-outline-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/VRChatroom/User With names.PNG"
+                class="card-img-top"
+                alt="VR Chat Room"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VR Chat Room</h5>
+                <p class="card-text">VR room with voice chat and leap motion</p>
+                <a
+                  href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fa-brands fa-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/MAH/U turn left type 3.gif"
+                class="card-img-top"
+                alt="Mid-Air Haptic Navigation"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mid-Air Haptic Navigation</h5>
+                <p class="card-text">
+                  Mid-Air Haptic Navigation Patterns using Ultrahaptics
+                </p>
+                <a href="#Project" class="btn btn-outline-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity Development -->
+      <div class="mb-5">
+        <h4 class="text-center bg-blue mb-4 p-3">Unity Development</h4>
+        <div class="row g-4 slideanim">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/Thesis/Sample Eye tracking data set.PNG"
+                class="card-img-top"
+                alt="Eye Tracking Analysis"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Eye Tracking Analysis</h5>
+                <p class="card-text">
+                  Eye Tracking analysis in VR Driving Simulator
+                </p>
+                <a href="#Project" class="btn btn-outline-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/Thesis/Dynamic Route Navigation.png"
+                class="card-img-top"
+                alt="Dynamic Navigation"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dynamic Navigation</h5>
+                <p class="card-text">
+                  Dynamic Navigation in VR Driving Simulator
+                </p>
+                <a href="#Project" class="btn btn-outline-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/VoiceRecorder/StartScreen.jpeg"
+                class="card-img-top"
+                alt="Voice Recording"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Voice Recording and Playback</h5>
+                <p class="card-text">Voice Recording and Playback feature</p>
+                <a
+                  href="https://github.com/Saurabhbagh/Voice-Recording-and-Playback-in-Unity"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fa-brands fa-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Android Development -->
+      <div class="mb-5">
+        <h4 class="text-center bg-blue mb-4 p-3">
+          Android Development in Unity
+        </h4>
+        <div class="row g-4 slideanim">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/EspMunich/5.jpeg"
+                class="card-img-top"
+                alt="EspMunich Start Screen"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Start Screen</h5>
+                <p class="card-text">Enter UserName</p>
+                <a
+                  href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fa-brands fa-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/EspMunich/6.jpeg"
+                class="card-img-top"
+                alt="Menu Selection"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Menu Selection Screen</h5>
+                <p class="card-text">Select Menu</p>
+                <a
+                  href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fa-brands fa-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./portfolioImages/EspMunich/3.jpeg"
+                class="card-img-top"
+                alt="Game Play"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Game Play</h5>
+                <p class="card-text">Select one of the correct options</p>
+                <a
+                  href="https://github.com/Saurabhbagh/Andoid-App-Test-in-Unity-ESP-Munich"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fa-brands fa-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Link -->
+      <div class="text-center mb-5">
+        <h4 class="mb-3">
+          To check out more work please visit my GitHub profile:
+        </h4>
+        <a
+          href="https://github.com/Saurabhbagh"
+          target="_blank"
+          class="btn btn-dark btn-lg"
+        >
+          <i class="fa-brands fa-github me-2"></i>View GitHub Profile
+        </a>
+      </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section id="Project" class="container py-5 bg-grey">
+      <h2 class="text-center mb-5">Project Details</h2>
+
+      <div class="row g-4">
+        <!-- Master Thesis -->
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i
+                  class="fa-solid fa-graduation-cap fa-2x text-primary me-3"
+                ></i>
+                <div>
+                  <h3 class="mb-0">Master Thesis</h3>
+                  <h5 class="text-muted">
+                    The usability of Mid-Air Haptics in Car Navigation systems
+                  </h5>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-danger me-1">Unity</span>
+                <span class="badge bg-danger me-1">C#</span>
+                <span class="badge bg-danger me-1">Python</span>
+                <span class="badge bg-danger me-1">AWS</span>
+                <span class="badge bg-danger me-1">Ultrahaptics</span>
+                <span class="badge bg-danger me-1">Tableau</span>
+              </div>
+              <p class="text-justify">
+                While several studies have examined the usability of mid-air
+                haptic sensations within the automotive industry, previous
+                research has not yet examined the use of mid-air haptics
+                sensations within in-car navigation systems. Therefore, this
+                study aimed to assess whether mid-air haptic sensations could
+                also be of use to in-car navigation systems. This study
+                specifically aimed to examine whether the inclusion of mid-air
+                haptic sensations within the in-car navigation system improves
+                the user experience of the in-car navigation system and helps to
+                decrease the amount of driver distraction in terms of lane
+                deviation and the eyes off the road time.
+              </p>
+              <p class="text-justify">
+                The results indicate that the mid-air haptic patterns that were
+                associated with specific navigation prompts helped drivers in
+                understanding directions and reaching their destination in a
+                timely manner. The study also indicated that people found the
+                mid-air haptic sensations to be reassuring as they provide
+                continuous feedback as to where one has to go. Additionally, it
+                also made it easier for users to estimate the distance they had
+                to travel before taking a turn. Moreover, the integration of
+                mid-air haptic patterns within the in-car navigation system
+                resulted in a smaller value for the mean lane deviation and a
+                lesser eyes off the road time as compared to the mean lane
+                deviation and eyes of the road time associated with the baseline
+                condition which included a navigation system consisting of voice
+                guided and visual navigation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini Project -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-vr-cardboard fa-2x text-success me-3"></i>
+                <div>
+                  <h4 class="mb-0">Mini Project</h4>
+                  <h6 class="text-muted">
+                    Multi-Player VR play area with voice chat and leap motion
+                  </h6>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-success me-1">Unity</span>
+                <span class="badge bg-success me-1">C#</span>
+                <span class="badge bg-success me-1">Unity Networking</span>
+              </div>
+              <p>
+                The goal of this project was to build a VR meeting room, with
+                leap motion hand interaction. The meeting room was built over
+                UNET and could be accessed from anywhere in the world. In this,
+                each user could be uniquely identified and all the hand
+                movements were captured and sent to the network. The basic
+                inverse kinematic algorithm was used to replicate the hand
+                motion based on the controller's position.
+              </p>
+              <a
+                href="https://github.com/Saurabhbagh/VR-chat-room-with-game-play--Networking-with-Unet"
+                target="_blank"
+                class="btn btn-outline-success"
+              >
+                <i class="fa-brands fa-github me-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Major Project -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-microchip fa-2x text-warning me-3"></i>
+                <div>
+                  <h4 class="mb-0">Major Project</h4>
+                  <h6 class="text-muted">
+                    Benchmark Evaluation of Thunder X2 processor (HPC)
+                  </h6>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-warning text-dark me-1">Linux</span>
+                <span class="badge bg-warning text-dark me-1">C++</span>
+                <span class="badge bg-warning text-dark me-1">HPC</span>
+                <span class="badge bg-warning text-dark me-1">DGEMM</span>
+                <span class="badge bg-warning text-dark me-1">HPL</span>
+              </div>
+              <p>
+                The goal of this project was to evaluate benchmark of the ARM
+                Thunder X2 processor using HPL and DGEMM algorithm and then
+                compare it with Intel's Core i7 and Xeon processors present in
+                the University at that time. With standard gcc and clang
+                compilers (the latest version present at that time) the
+                performance of ARM Thunder X2 processor was not up to mark but
+                with ARM compiler there was a significant increase in
+                performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seminar Project -->
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-wifi fa-2x text-info me-3"></i>
+                <div>
+                  <h4 class="mb-0">Seminar Project</h4>
+                  <h6 class="text-muted">Wireless VR</h6>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="badge bg-info me-1">Java</span>
+                <span class="badge bg-info me-1">NetBeans</span>
+                <span class="badge bg-info me-1">Wireless VR Research</span>
+              </div>
+              <p>
+                The main goal of this seminar was to understand the working of
+                wireless VR - How data can be transmitted seamlessly with
+                minimum latency. A side project was created called VR
+                interpolated images to tackle the lag. In this when the user
+                moves around the previous image that was in the frame will be
+                interpolated as per the user head movement. The interpolation
+                scheme replicated the row or column pixels of the image in the
+                last frame depending on the movement.
+              </p>
+              <a
+                href="https://github.com/Saurabhbagh/VRInterpolatedImage"
+                target="_blank"
+                class="btn btn-outline-info"
+              >
+                <i class="fa-brands fa-github me-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container py-5 bg-grey">
+      <h2 class="text-center mb-5">Achievements</h2>
+
+      <div
+        id="achievementCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#achievementCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#achievementCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center py-5">
+              <i class="fa-solid fa-trophy fa-4x text-warning mb-4"></i>
+              <h4 class="text-dark">
+                "University of Bayreuth Scholarship - Winter Semester 2019-2020"
+              </h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center py-5">
+              <i class="fa-solid fa-medal fa-4x text-success mb-4"></i>
+              <h4 class="text-dark">
+                "3rd position in Study Smarter Hackathon, June 2019"
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#achievementCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#achievementCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="container py-5">
+      <div class="text-center mb-5">
+        <h2>Videos</h2>
+        <h4>Past Project Video Portfolio</h4>
+      </div>
+      <div class="row g-4 slideanim">
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header text-center">
+              <h5 class="mb-1">Thor's Hammer Visualization</h5>
+              <small class="text-danger"
+                >(Warning: Reduce the volume while watching the video
+                below)</small
+              >
+            </div>
+            <div class="card-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/d9drGwGNdMM"
+                  title="Thor's Hammer Visualization"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header text-center">
+              <h5 class="mb-1">Driving Simulator</h5>
+              <small class="text-danger"
+                >(Warning: Reduce the volume while watching the video
+                below)</small
+              >
+            </div>
+            <div class="card-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/iIzXihgfgmw"
+                  title="Driving Simulator"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 slideanim mt-2">
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header text-center">
+              <h5 class="mb-1">Kiosk Visualization in VR</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/d0NWU0rvAdU"
+                  title="Kiosk Visualization in VR"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header text-center">
+              <h5 class="mb-1">Implementation of A* Algorithm</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/mVEqWWQUT5w"
+                  title="Implementation of A* Algorithm"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 bg-grey">
+      <h2 class="text-center mb-5">CONTACT</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <h5 class="mb-3">Find me on:</h5>
+                  <div class="d-flex gap-3">
+                    <a
+                      href="https://www.linkedin.com/in/saurabhbagh"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                    >
+                      <i class="fa-brands fa-linkedin fa-lg me-2"></i>LinkedIn
+                    </a>
+                    <a
+                      href="https://github.com/Saurabhbagh"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="fa-brands fa-github fa-lg me-2"></i>GitHub
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="mb-3">Email:</h5>
+                  <div class="d-flex align-items-center">
+                    <a
+                      href="mailto:Saurabh.bagh@howtoabroad.com"
+                      class="btn btn-outline-success me-3"
+                      >s <i class="fa-solid fa-envelope fa-lg me-2"></i>Send
+                      Email
+                    </a>
+                    <div>
+                      <small class="text-muted"
+                        >Saurabh.bagh@howtoabroad.com</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <div class="container">
+        <a href="#SaurabhBagh" class="btn btn-outline-light btn-sm mb-2">
+          <i class="fa-solid fa-chevron-up me-1"></i>Back to Top
+        </a>
+        <p class="mb-0">&copy; 2025 Saurabh Bagh. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scroll for anchor links and scroll animations
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for navigation links
+        document
+          .querySelectorAll('a.nav-link, a[href^="#"]')
+          .forEach(function (link) {
+            link.addEventListener("click", function (e) {
+              if (this.hash !== "") {
+                e.preventDefault();
+                const hash = this.hash;
+                const target = document.querySelector(hash);
+                if (target) {
+                  target.scrollIntoView({ behavior: "smooth" });
+                }
               }
             });
           });
-        })
-      </script>
 
-</body>
+        // Animate elements on scroll
+        function revealOnScroll() {
+          document.querySelectorAll(".slideanim").forEach(function (el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+              el.classList.add("slide");
+            }
+          });
+        }
 
+        // Initial check and scroll listener
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+
+        // Navbar background change on scroll
+        window.addEventListener("scroll", function () {
+          const navbar = document.querySelector(".navbar");
+          if (window.scrollY > 50) {
+            navbar.style.background = "rgba(0,0,0,0.95)";
+          } else {
+            navbar.style.background = "rgba(0,0,0,0.85)";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
