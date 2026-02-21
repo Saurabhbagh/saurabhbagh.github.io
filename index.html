@@ -44,26 +44,52 @@
     <style>
       body {
         font-family: "Lato", Arial, sans-serif;
-        background: #f8f9fa;
+        background: linear-gradient(180deg, #f8f9fa 0%, #eef2f7 100%);
         color: #222;
       }
       .navbar {
-        background: rgba(0, 0, 0, 0.85) !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        transition: background 0.3s;
+        background: rgba(9, 15, 27, 0.82) !important;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        backdrop-filter: blur(8px);
+        transition: background 0.3s, box-shadow 0.3s;
       }
       .navbar-brand img {
         border-radius: 12px;
       }
+      .navbar .nav-link {
+        color: rgba(255, 255, 255, 0.88) !important;
+        font-weight: 600;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+      .navbar .nav-link:hover {
+        color: #ffffff !important;
+        transform: translateY(-1px);
+      }
       .hero-section {
+        position: relative;
         min-height: 60vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+        background: linear-gradient(130deg, #0f172a 0%, #1d4f68 55%, #43235f 100%);
         color: #fff;
         text-align: center;
-        padding: 80px 0 40px 0;
+        padding: 110px 0 55px 0;
+        overflow: hidden;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.18), transparent 40%),
+          radial-gradient(circle at 80% 80%, rgba(255, 81, 47, 0.2), transparent 35%);
+        pointer-events: none;
+      }
+      .hero-section .container {
+        position: relative;
+        z-index: 1;
       }
       .hero-section h1 {
         font-family: "Montserrat", sans-serif;
@@ -74,23 +100,34 @@
       }
       .hero-section h3 {
         font-weight: 400;
-        color: #e0e0e0;
-        margin-bottom: 1.5em;
+        color: #dbe7ff;
+        margin-bottom: 0.75em;
       }
-      .btn-resume {
-        font-size: 1.2rem;
-        padding: 0.75em 2.5em;
+      .hero-meta {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 1.05rem;
+      }
+      .hero-links a {
+        color: #fff;
+        font-weight: 600;
+        text-underline-offset: 3px;
+        transition: opacity 0.2s ease;
+      }
+      .hero-links a:hover {
+        opacity: 0.8;
+      }
+      .hero-project-btn {
+        border: 2px solid #fff;
         border-radius: 30px;
-        background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
-        color: #fff;
-        border: none;
-        box-shadow: 0 2px 8px rgba(221, 36, 118, 0.15);
-        transition: background 0.2s, box-shadow 0.2s;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        transition: all 0.25s ease;
       }
-      .btn-resume:hover {
-        background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
-        box-shadow: 0 4px 16px rgba(221, 36, 118, 0.25);
-        color: #fff;
+      .hero-project-btn:hover {
+        background: #fff;
+        color: #243d4b !important;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
       }
       section,
       .container-fluid {
@@ -100,10 +137,18 @@
       .thumbnail,
       .panel {
         border-radius: 18px;
-        box-shadow: 0 2px 16px rgba(44, 83, 100, 0.08);
-        border: none;
+        box-shadow: 0 8px 28px rgba(20, 37, 63, 0.1);
+        border: 1px solid rgba(31, 54, 91, 0.08);
+        background: rgba(255, 255, 255, 0.96);
         overflow: hidden;
         margin-bottom: 2rem;
+        transition: transform 0.24s ease, box-shadow 0.24s ease;
+      }
+      .card:hover,
+      .thumbnail:hover,
+      .panel:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 36px rgba(20, 37, 63, 0.15);
       }
       .card img,
       .thumbnail img {
@@ -128,10 +173,10 @@
         transform: none !important;
       }
       .bg-grey {
-        background: #f4f6fb !important;
+        background: #eef2f8 !important;
       }
       .bg-blue {
-        background: #2c5364 !important;
+        background: linear-gradient(90deg, #26465e 0%, #3f2f66 100%) !important;
         color: #fff !important;
         border-radius: 8px;
         padding: 0.5em 0;
@@ -193,10 +238,6 @@
         .container {
           padding-left: 15px;
           padding-right: 15px;
-        }
-        .btn-resume {
-          font-size: 1rem;
-          padding: 0.6em 2em;
         }
       }
 
@@ -306,27 +347,25 @@
       <div class="container">
         <h1>Saurabh Bagh</h1>
         <h3>
-          Co-Founder HowToAbroad | VR Game Developer | Software Developer | SEO
-          Enthusiast
+          Senior Software Engineer
         </h3>
+        <p class="mb-0 hero-meta">
+          saurabhbagh@gmail.com
+        </p>
+        <p class="mt-2 mb-0 hero-links">
+          <a href="https://www.linkedin.com/in/saurabhbagh" target="_blank" class="text-decoration-underline">LinkedIn</a>
+          |
+          <a href="https://github.com/Saurabhbagh" target="_blank" class="text-decoration-underline">GitHub</a>
+          <!-- | -->
+          <!-- <a href="https://saurabhbagh.github.io" target="_blank" class="text-decoration-underline">Website</a> -->
+        </p>
         <div
           class="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center"
         >
-          <button class="btn btn-resume" onclick="window.open('./Website.pdf')">
-            <i class="fa-solid fa-file-arrow-down me-2"></i>Resume
-          </button>
           <a
             href="https://app.howtoabroad.com"
             target="_blank"
-            class="btn btn-outline-light btn-lg px-4 py-2"
-            style="
-              border: 2px solid #fff;
-              border-radius: 30px;
-              font-weight: 600;
-              transition: all 0.3s ease;
-            "
-            onmouseover="this.style.background='#fff'; this.style.color='#2c5364'"
-            onmouseout="this.style.background='transparent'; this.style.color='#fff'"
+            class="btn btn-outline-light btn-lg px-4 py-2 hero-project-btn"
           >
             <i class="fa-solid fa-external-link me-2"></i>Check My Current
             Project - App.HowToAbroad.com
@@ -373,23 +412,18 @@
             <h1 class="mb-3">About Me</h1>
             <h2 class="fw-bold">Saurabh Bagh</h2>
             <h4 class="text-secondary mb-2">
-              Co-Founder HowToAbroad | VR Game Developer | Software Developer |
-              SEO Enthusiast
+              Senior Software Engineer
             </h4>
-            <h5 class="mb-3">University of Bayreuth</h5>
+            <h5 class="mb-3">Berlin, Germany</h5>
             <p>
-              Completed Master's in Computer Science at the University of
-              Bayreuth with hands-on experience in VR/AR development, computer
-              graphics, and haptic technologies. Currently Co-Founder of
-              HowToAbroad.com, with over 7+ years of professional experience
-              spanning VR engineering at Volkswagen AG, Unity development,
-              software engineering, and research roles. Previously worked as a
-              Software Developer at Verra (Berlin), Unity Developer at
-              Technology and Strategy (Stuttgart), and held various technical
-              positions including VR Software Developer Intern at Schaeffler AG
-              and Research Assistant at University of Bayreuth. Started career
-              as a Software Engineer at HCL Technologies with 3 years of
-              foundational experience in enterprise software development.
+              Senior Software Engineer with 8+ years of experience building
+              scalable backend systems, RESTful APIs, and distributed services
+              using C#, .NET, and Python. Strong background in microservices
+              architecture, cloud platforms (Azure/AWS), and data-driven
+              systems. Proven track record of improving performance,
+              reliability, and security of production systems. Passionate about
+              building high-impact platforms that enhance matching efficiency,
+              visibility, and user experience.
             </p>
           </div>
         </div>
@@ -416,20 +450,20 @@
             </div>
             <div class="mb-3">
               <div class="d-flex align-items-center mb-2">
-                <i class="fa-brands fa-java fa-lg me-2 text-danger"></i
-                ><span class="fw-bold">Java</span>
+                <i class="fa-solid fa-code fa-lg me-2 text-danger"></i
+                ><span class="fw-bold">.NET / ASP.NET</span>
               </div>
               <div class="progress mb-2" style="height: 10px">
-                <div class="progress-bar" style="width: 80%"></div>
+                <div class="progress-bar" style="width: 90%"></div>
               </div>
             </div>
             <div class="mb-3">
               <div class="d-flex align-items-center mb-2">
-                <i class="fa-solid fa-r fa-lg me-2 text-success"></i
-                ><span class="fw-bold">R</span>
+                <i class="fa-brands fa-node-js fa-lg me-2 text-success"></i
+                ><span class="fw-bold">Node.js / TypeScript</span>
               </div>
               <div class="progress mb-2" style="height: 10px">
-                <div class="progress-bar" style="width: 70%"></div>
+                <div class="progress-bar" style="width: 75%"></div>
               </div>
             </div>
           </div>
@@ -496,47 +530,47 @@
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
                   <i class="fa-solid fa-laptop-code fa-lg me-2 text-primary"></i
-                  ><span class="fw-bold">Software Expertise</span>
+                  ><span class="fw-bold">Backend Development & Architecture</span>
                 </div>
-                <p class="mb-2">Unity, CA Clarity PPM 13.2.1, PyCharm, Linux</p>
+                <p class="mb-2">ASP.NET (C#), Node.js (TypeScript), Python, RESTful APIs, Microservices, Design Patterns</p>
               </div>
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa-solid fa-cms fa-lg me-2 text-success"></i
-                  ><span class="fw-bold">CMS</span>
+                  <i class="fa-solid fa-cloud fa-lg me-2 text-success"></i
+                  ><span class="fw-bold">Cloud & DevOps Technologies</span>
                 </div>
-                <p class="mb-2">WordPress, Fiona</p>
+                <p class="mb-2">Azure, Docker, CI/CD, Kubernetes, Containerization</p>
               </div>
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa-solid fa-search fa-lg me-2 text-warning"></i
-                  ><span class="fw-bold">SEO Testing</span>
+                  <i class="fa-solid fa-database fa-lg me-2 text-warning"></i
+                  ><span class="fw-bold">Data Management</span>
                 </div>
-                <p class="mb-2">Screaming Frog</p>
+                <p class="mb-2">Data Engineering, Data Solutions, PostgreSQL, Snowflake, Data Validation</p>
               </div>
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa-solid fa-database fa-lg me-2 text-info"></i
-                  ><span class="fw-bold">Database</span>
+                  <i class="fa-solid fa-robot fa-lg me-2 text-info"></i
+                  ><span class="fw-bold">Automation & AI Integration</span>
                 </div>
-                <p class="mb-2">MySQL, Oracle 11g, MS Access</p>
+                <p class="mb-2">OpenAI/Gemini integration, Pydantic-AI workflows, n8n event-driven automation</p>
               </div>
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa-solid fa-chart-bar fa-lg me-2 text-danger"></i
-                  ><span class="fw-bold">BI - Web Tool</span>
+                  <i class="fa-solid fa-screwdriver-wrench fa-lg me-2 text-danger"></i
+                  ><span class="fw-bold">Core Stack</span>
                 </div>
-                <p class="mb-2">Tableau, Google Analytics</p>
+                <p class="mb-2">C#, .NET, Entity Framework, Python, React, Angular, Redis, Azure</p>
               </div>
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-2">
                   <i class="fa-solid fa-comments fa-lg me-2 text-secondary"></i
-                  ><span class="fw-bold">Transferable Skills</span>
+                  ><span class="fw-bold">Leadership & Collaboration</span>
                 </div>
                 <p class="mb-2">
-                  Very strong verbal and communication skills, ability to
-                  achieve goals in a highly innovative and fast-paced
-                  environment
+                  Cross-functional collaboration, mentoring, reliability
+                  engineering, and delivery in fast-paced production
+                  environments
                 </p>
               </div>
             </div>
@@ -549,38 +583,52 @@
     <section id="WorkTimeline" class="container py-5">
       <h2 class="mb-4 text-center">Work Experience</h2>
       <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Co-Founder</h5>
-              <h6 class="card-subtitle mb-2 text-muted">HowToAbroad.com</h6>
+              <h5 class="card-title">Senior Software Engineer - Engineering Manager and Founder</h5>
+              <h6 class="card-subtitle mb-2 text-muted">HowToAbroad</h6>
               <div class="mb-2">
-                <i class="fa-solid fa-location-dot me-1"></i> Remote
+                <i class="fa-solid fa-location-dot me-1"></i> Berlin, Germany
               </div>
               <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Jan 2021 - Present
+                <i class="fa-regular fa-calendar me-1"></i> Jan 2025 - Present
               </div>
+              <p class="mb-1"><strong>Tags:</strong> C#, .NET, Entity Framework, React, Azure, Leadership, Redis, n8n Automation, Pydantic AI</p>
+              <ul class="mb-0">
+                <li>Built and launched app.howtoabroad.com from the ground up to 10K+ users with OpenAI/Gemini + Pydantic-AI integration.</li>
+                <li>Refactored .NET microservices on Azure using Redis and Entity Framework optimizations to cut latency by 35%.</li>
+                <li>Developed event-driven pipelines with n8n Automation to scale business logic with less manual backend work.</li>
+                <li>Improved system stability by 15% and reduced API error rates through CI/CD and observability improvements.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Software Developer</h5>
+              <h5 class="card-title">Senior Software Engineer</h5>
               <h6 class="card-subtitle mb-2 text-muted">Verra</h6>
               <div class="mb-2">
                 <i class="fa-solid fa-location-dot me-1"></i> Berlin, Germany
               </div>
               <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Dec 2022 - Dec 2024
+                <i class="fa-regular fa-calendar me-1"></i> Dec 2022 - Jan 2025
               </div>
+              <p class="mb-1"><strong>Tags:</strong> C#, .NET, Entity Framework, Python, Angular, Azure, Redis, Power BI</p>
+              <ul class="mb-0">
+                <li>Designed and delivered scalable backend services and secure REST APIs in production.</li>
+                <li>Improved overall system stability by 15% through proactive monitoring and code improvements.</li>
+                <li>Reduced API error rates by ~20% by refactoring critical paths and strengthening observability.</li>
+                <li>Built ETL pipelines and improved Azure CI/CD pipelines, accelerating release cycles by ~20%.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Unity Developer</h5>
+              <h5 class="card-title">Software Engineer</h5>
               <h6 class="card-subtitle mb-2 text-muted">
                 Technology and Strategy
               </h6>
@@ -588,26 +636,19 @@
                 <i class="fa-solid fa-location-dot me-1"></i> Stuttgart, Germany
               </div>
               <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Aug 2021 - Nov 2022
+                <i class="fa-regular fa-calendar me-1"></i> Sep 2021 - Dec 2022
               </div>
+              <p class="mb-1"><strong>Tags:</strong> C#, Python</p>
+              <ul class="mb-0">
+                <li>Developed and maintained production .NET applications and APIs.</li>
+                <li>Reduced processing times by ~25% through performance tuning and code optimization.</li>
+                <li>Contributed to architecture decisions for better scalability and maintainability.</li>
+                <li>Implemented Entity Framework data access layers and participated in code reviews.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Agora Platform Technical Lead</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Hochschule München</h6>
-              <div class="mb-2">
-                <i class="fa-solid fa-location-dot me-1"></i> Munich, Germany
-              </div>
-              <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Aug 2021 - Sep 2021
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Research Assistant</h5>
@@ -620,69 +661,38 @@
               <div class="mb-2">
                 <i class="fa-regular fa-calendar me-1"></i> Sep 2020 - Sep 2021
               </div>
+              <p class="mb-1"><strong>Tags:</strong> C#, Unity, Ultrahaptics</p>
+              <ul class="mb-0">
+                <li>Built backend services and REST APIs for research platforms.</li>
+                <li>Introduced unit and integration tests, reducing critical defects by ~30%.</li>
+                <li>Applied event-driven architecture to improve data processing workflows.</li>
+                <li>Designed a mid-air haptics Braille system focused on inclusive technology.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Intern VR Engineer</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Volkswagen AG</h6>
+              <h5 class="card-title">Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Volkswagen</h6>
               <div class="mb-2">
                 <i class="fa-solid fa-location-dot me-1"></i> Wolfsburg, Germany
               </div>
               <div class="mb-2">
                 <i class="fa-regular fa-calendar me-1"></i> Jan 2020 - Sep 2020
               </div>
+              <p class="mb-1"><strong>Tags:</strong> C#, Unity, Python, Tableau</p>
+              <ul class="mb-0">
+                <li>Developed a VR driving simulator in Unity and C# for research experiments.</li>
+                <li>Implemented voice, visual, and haptic-based navigation guidance.</li>
+                <li>Conducted user studies and analyzed results with Python and Tableau.</li>
+                <li>Improved navigation usability by ~25% using data-driven insights.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Student Assistant</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                University of Bayreuth
-              </h6>
-              <div class="mb-2">
-                <i class="fa-solid fa-location-dot me-1"></i> Bayreuth, Germany
-              </div>
-              <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Sep 2018 - Sep 2020
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">VR Software Developer Intern</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Schaeffler AG</h6>
-              <div class="mb-2">
-                <i class="fa-solid fa-location-dot me-1"></i> Herzogenaurach,
-                Germany
-              </div>
-              <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Sep 2019 - Nov 2019
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Working Student</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Exasol</h6>
-              <div class="mb-2">
-                <i class="fa-solid fa-location-dot me-1"></i> Nuremberg, Germany
-              </div>
-              <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Aug 2018 - Sep 2018
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Software Engineer</h5>
@@ -693,8 +703,15 @@
                 <i class="fa-solid fa-location-dot me-1"></i> Noida, India
               </div>
               <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Aug 2014 - Jul 2017
+                <i class="fa-regular fa-calendar me-1"></i> Aug 2014 - Jun 2017
               </div>
+              <p class="mb-1"><strong>Tags:</strong> Java, Reporting Tools</p>
+              <ul class="mb-0">
+                <li>Supported large-scale production systems with 99.9% uptime.</li>
+                <li>Monitored application health and resolved incidents with operations teams.</li>
+                <li>Delivered BI reports and operational documentation for stakeholders.</li>
+                <li>Reduced incident resolution time by ~20% through process and tooling improvements.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -708,7 +725,7 @@
         <div class="col-lg-5 col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">M.Sc. in Computer Science</h5>
+              <h5 class="card-title">Master of Science, Computer Science</h5>
               <h6 class="card-subtitle mb-2 text-muted">
                 University of Bayreuth
               </h6>
@@ -716,8 +733,11 @@
                 <i class="fa-solid fa-location-dot me-1"></i> Bayreuth, Germany
               </div>
               <div class="mb-2">
-                <i class="fa-regular fa-calendar me-1"></i> Oct 2017 - Nov 2020
+                <i class="fa-regular fa-calendar me-1"></i> Sep 2017 - Nov 2020
               </div>
+              <p class="mb-1">Specialization: Human-Computer Interaction</p>
+              <p class="mb-1">GPA: 1.9 (German grading scale: 1.0 = best)</p>
+              <p class="mb-0">Relevant Coursework: Human-Computer Interaction, Data Analysis, Robotics</p>
             </div>
           </div>
         </div>
@@ -725,7 +745,7 @@
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">
-                B. Tech. in Computer Science and Engineering
+                Bachelor of Technology, Computer Science and Engineering
               </h5>
               <h6 class="card-subtitle mb-2 text-muted">
                 Maharshi Dayanand University
@@ -736,7 +756,33 @@
               <div class="mb-2">
                 <i class="fa-regular fa-calendar me-1"></i> Aug 2010 - Jun 2014
               </div>
+              <p class="mb-1">GPA: 2.3 (German grading scale)</p>
+              <p class="mb-0">Relevant Coursework: Data structures and algorithms, neural networks, AI, Java, Unix, statistics, and web development</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card p-4 shadow-sm h-100">
+            <h3 class="mb-3">Languages</h3>
+            <ul class="mb-0">
+              <li>German: A2 (B1 in progress)</li>
+              <li>English: Fluent</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card p-4 shadow-sm h-100">
+            <h3 class="mb-3">Extracurricular Activities</h3>
+            <ul class="mb-0">
+              <li>Enjoy cooking and experimenting with different cuisines.</li>
+              <li>Avid traveler interested in exploring new cultures and places.</li>
+              <li>Enjoy listening to movie and TV show theme songs.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1179,7 +1225,7 @@
             <div class="text-center py-5">
               <i class="fa-solid fa-medal fa-4x text-success mb-4"></i>
               <h4 class="text-dark">
-                "3rd position in Study Smarter Hackathon, June 2019"
+                "3rd Prize, Study Smarter Hackathon (June 2019) - Awarded €1,000"
               </h4>
             </div>
           </div>
@@ -1323,21 +1369,17 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <h5 class="mb-3">Email:</h5>
-                  <div class="d-flex align-items-center">
-                    <a
-                      href="mailto:Saurabh.bagh@howtoabroad.com"
-                      class="btn btn-outline-success me-3"
-                      ><i class="fa-solid fa-envelope fa-lg me-2"></i>Send Email
-                    </a>
-                    <div>
-                      <small class="text-muted"
-                        >Saurabh.bagh@howtoabroad.com</small
-                      >
-                    </div>
+                <!-- <div class="col-md-6">
+                  <h5 class="mb-3">Contact:</h5>
+                  <div class="mb-2">
+                    <a href="mailto:saurabhbagh@gmail.com" class="btn btn-outline-success me-2"
+                      ><i class="fa-solid fa-envelope fa-lg me-2"></i>Send Email</a
+                    >
                   </div>
-                </div>
+                  <div>
+                    <small class="text-muted d-block">saurabhbagh@gmail.com</small>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -1351,7 +1393,7 @@
         <a href="#SaurabhBagh" class="btn btn-outline-light btn-sm mb-2">
           <i class="fa-solid fa-chevron-up me-1"></i>Back to Top
         </a>
-        <p class="mb-0">&copy; 2025 Saurabh Bagh. All rights reserved.</p>
+        <p class="mb-0">&copy; 2026 Saurabh Bagh. All rights reserved.</p>
       </div>
     </footer>
 
